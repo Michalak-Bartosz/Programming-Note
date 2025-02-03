@@ -1,0 +1,10 @@
+# Exclude workspace cache
+/Obsidian/ObsidianNotes/.obsidian/graph.json
+/Obsidian/ObsidianNotes/.obsidian/workspace.json
+/Obsidian/ObsidianNotes/.obsidian/workspace-mobile.json
+
+# Exclude plugins
+/Obsidian/ObsidianNotes/.obsidian/plugins/*
+
+# Add below lines to exclude trashes
+/Obsidian/ObsidianNotes/.trash

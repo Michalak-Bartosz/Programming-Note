@@ -1,0 +1,62 @@
+graph LR
+    A(("Java SE 11<br/>(Release: September 2018)")):::main
+    A --> F_1:::background 
+    A --> F_2:::background 
+    A --> F_3:::background 
+    A --> F_4:::background 
+    A --> F_5:::background 
+    A --> F_6:::background 
+    A --> F_7:::background 
+    A --> F_8:::background 
+
+
+    subgraph F_1["Local-Variable for Lambda"]
+    direction TB
+        F11("Allowed 'var' in lambda expressions for readability")
+        F12("Improves Lambda Readability and Simplifies Code")
+    end
+
+    subgraph F_2["HTTP Client API"]
+    direction TB
+        F21("New API for HTTP/2 and WebSocket communication")
+        F22("Simplifies HTTP Requests and Responses")
+    end
+    
+    subgraph F_3["String Methods"]
+    direction TB
+        F31("Methods like isBlank(), lines(), repeat(), and strip()")
+        F32("Eases String Manipulations")
+    end
+    
+    subgraph F_4["File Methods Enhancements"]
+    direction TB
+        F41("New Methods: Files.writeString, Files.readString")
+        F42("Streamlines File Reading and Writing")
+    end
+    
+    subgraph F_5["Nest-Based Access Control"]
+    direction TB
+        F51("Improved access control between nested classes")
+        F52("Helps with Internal Access Modifiers")
+    end
+
+    subgraph F_6["Epsilon Garbage Collector"]
+    direction TB
+        F61("No-Op Garbage Collector for Testing")
+        F62("Helps in Benchmarking and Performance Testing")
+    end
+
+    subgraph F_7["JVM Tools"]
+    direction TB
+        F71("Flight Recorder \(Profiling\) and Mission Control \(Performance Diagnosis\)")
+        F72("Helps in Performance Debugging and Monitoring")
+    end
+
+    subgraph F_8["Deprecations and Removals"]
+    direction TB
+        F81("Removal of Java EE and CORBA Modules")
+        F82("Nashorn Engine Deprecated")
+    end
+
+classDef main fill:#008c31,font-size:1.4rem,stroke-width: 0.2rem;
+classDef background fill:#0089a8,fill-opacity: 0.2;

@@ -1,0 +1,14 @@
+---
+title: General workflow in one cycle of Garbage Collector (GC)
+---
+flowchart LR
+  A((GC)) --> B[STEPS]
+  B --> C(MARK)
+  C --> |Identifies which pieces of memory are in use and which aren’t| D(SWEEP)
+  B --> D
+  D --> |Removes unused memory from Mark step| E(((Cycle<br/>Complete)))
+
+style A fill:#008c31,font-size:3rem,stroke-width: 0.2rem;
+style E fill:#a81f00,stroke-width: 0.2rem;
+style C stroke:#0089a8,stroke-width: 0.2rem;
+style D stroke:#95a800,stroke-width: 0.2rem;

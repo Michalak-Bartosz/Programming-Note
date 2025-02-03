@@ -1,0 +1,248 @@
+{
+  "main": {
+    "id": "c5a9b53269968673",
+    "type": "split",
+    "children": [
+      {
+        "id": "893a6dee72b7fd05",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68632dd79676656c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d88dcd1bce7136ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8f58ee3c4791db3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98c9513e530ff2df",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "11681330a65f86ed",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2c8a7ca31a6ed4ab",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f35a79309ecf5d52",
+    "type": "split",
+    "children": [
+      {
+        "id": "470fd9f4fde3b6d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d668ba8c029c5d3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Programming/Java/Recruitment/2024/Companies.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Companies"
+            }
+          },
+          {
+            "id": "3b5e1b73e300b8ab",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Programming/Java/Recruitment/2024/Companies.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Companies"
+            }
+          },
+          {
+            "id": "e34786ab05b3c438",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9f51932f15c92138",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Programming/Java/Recruitment/2024/Companies.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Companies"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "floating": {
+    "id": "a13ae4b22a3d2fc8",
+    "type": "floating",
+    "children": [
+      {
+        "id": "77ad59a0929c8fdc",
+        "type": "window",
+        "children": [
+          {
+            "id": "a411eee0eb5a1aad",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "55e6064bbbc70f39",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "Graph view"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 436,
+        "y": 22,
+        "width": 2216,
+        "height": 1352,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "68632dd79676656c",
+  "lastOpenFiles": [
+    "Programming/Design/Design.index.md",
+    "Programming/Design/Programming Models/Programming Models.index.md",
+    "Programming/Design/Programming Models/Structured or modular programming.md",
+    "Programming/Design/Programming Models/Logical programming.md",
+    "Programming/Design/Programming Models/Functional programming.md",
+    "Programming/Design/Programming Models/Imperative programming.md",
+    "Programming/Design/Programming Models/Declarative programming.md",
+    "Programming/Design/Design Principles/Design Principles.index.md",
+    "Programming/Design/Design Patterns/Design Patterns.index.md",
+    "Programming/Maven/Mvn.index.md",
+    "Programming/Maven/MavenCommands.md",
+    "Programming/Java/Java.index.md",
+    "Programming/Programming.index.md",
+    "Programming/Which programming language should I learn first.pdf",
+    "Programming/React.js/Knowledge/Libraries & Resources.md",
+    "Programming/React.js/Knowledge/Knowledge.index.md",
+    "Programming/React.js/ReactJS.index.md",
+    "Programming/React.js/Projects/ReactProjects.index.md",
+    "Programming/React.js/Projects/ShowcasePage/ShowcasePage.index.md",
+    "Programming/React.js/Projects/ShowcasePage/Other/Ideas.md",
+    "Programming/React.js/Projects/ShowcasePage/Text/AboutMe.md",
+    "Programming/React.js/Projects/ShowcasePage/Text/Experience.md",
+    "Programming/React.js/Projects/ShowcasePage/Text/Projects.md",
+    "Programming/React.js/Projects/ShowcasePage/Text/Read.me.md",
+    "Programming/Java/Other Subjects/Subjects.index.md",
+    "Programming/Java/Other Subjects/REST API.md",
+    "Programming/Java/JavaConceptMap.canvas",
+    "Programming/Java/Knowledge.index.md",
+    "Programming/Java/Other Subjects/Images/ExcalidrawFiles/JavaGarbageCollectors.excalidraw",
+    "Programming/Java/Other Subjects/Garbage Collector/Mermaid/7.ZGarbageCollector.mmd",
+    "Programming/Java/Other Subjects/Garbage Collector/Mermaid/6.G1GarbageCollector.mmd",
+    "Programming/Java/Other Subjects/Garbage Collector/Mermaid/4.SerialGarbageCollector.mmd",
+    "Programming/Java/Other Subjects/Garbage Collector/Mermaid/5.ParallelGarbageCollector.mmd",
+    "Programming/Java/Other Subjects/Garbage Collector/Mermaid/3.JVMGarbageCollectorTypes.mmd",
+    "Programming/Java/Other Subjects/Garbage Collector/Mermaid/2.GarbageCollectorAdvantagesAndDisadvantages.mmd",
+    "Programming/Java/Other Subjects/Garbage Collector/Mermaid/1.GeneralWorkFlowInOneCycleOfGarbageCollector.mmd",
+    "Programming/Java/Other Subjects/Garbage Collector/Images/6.G1GarbageCollector.svg",
+    "Programming/Java/Other Subjects/Garbage Collector/Images/7.ZGarbageCollector.svg",
+    "Programming/Java/Other Subjects/Garbage Collector/Images/5.ParallelGarbageCollector.svg",
+    "Programming/Java/Other Subjects/Garbage Collector/Images/4.SerialGarbageCollector.svg",
+    "Programming/Java/Other Subjects/Garbage Collector/Images/2.GarbageCollectorAdvantagesAndDisadvantages.svg",
+    "Programming/Java/Other Subjects/Garbage Collector/Images/3.JVMGarbageCollectorTypes.svg",
+    "Programming/Java/Other Subjects/Garbage Collector/Images/1.GeneralWorkFlowInOneCycleOfGarbageCollector.svg",
+    "Programming/Java/Other Subjects/ComparatorComparable/Mermaid/ComparatorAndComparableInJava.mmd",
+    "Programming/Java/Other Subjects/ComparatorComparable/Images/ComparatorAndComparableInJava.svg",
+    "Programming/Java/Other Subjects/Java Memory Model/3.Tunning Heap.png",
+    "Programming/Java/Other Subjects/Java Memory Model/2.Head divided.png"
+  ]
+}

@@ -1,0 +1,28 @@
+---
+title: Garbage Collector (GC) advantages and disadvantages
+---
+flowchart TB
+  G((GC)) --> A[Advantages]
+  G --> D[Disadvantages]
+
+  A --> A1(No manual memory allocation/deallocation handling because unused memory space is automatically handled by GC)
+  A --> A2(No overhead of handling Dangling Pointer)
+  A --> A3(Automatic Memory Leak management - GC on its own can’t guarantee the full proof solution to memory leaking; however, it takes care of a good portion of it)
+  
+  D --> D1(Since JVM has to keep track of object reference creation/deletion, this activity requires <br/><ins>**MORE CPU POWER**</ins> than the original application. It may affect the performance of requests which <br/><ins>**REQUIRE LARGE MEMORY**</ins>)
+  D --> D2(Programmers have <br/><ins>**NO CONTROL OVER THE SCHEDULING OF CPU TIME**</ins> dedicated to freeing objects that are no longer needed)
+  D --> D3(Using some GC implementations might result in the <br/><ins>**APPLICATION STOPPING UNPREDICTABLY**</ins>)
+  D --> D4(Automatized memory management would <br/><ins>**NOT BE AS EFFICIENT AS THE PROPER MANUAL MEMORY ALLOCATION/DELLOCATION**</ins>)
+
+style G fill:#008c31,font-size:2rem,stroke-width: 0.2rem;
+style A fill:#2eab00
+style D fill:#a81f00
+
+style A1 stroke:#2eab00,stroke-width: 0.2rem;
+style A2 stroke:#2eab00,stroke-width: 0.2rem;
+style A3 stroke:#2eab00,stroke-width: 0.2rem;
+
+style D1 stroke:#a81f00,stroke-width: 0.2rem;
+style D2 stroke:#a81f00,stroke-width: 0.2rem;
+style D3 stroke:#a81f00,stroke-width: 0.2rem;
+style D4 stroke:#a81f00,stroke-width: 0.2rem;

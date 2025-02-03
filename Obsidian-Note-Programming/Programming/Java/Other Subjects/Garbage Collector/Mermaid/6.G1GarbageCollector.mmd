@@ -1,0 +1,27 @@
+---
+title: G1 Garbage Collector (Garbage First)
+---
+graph LR
+  G((G1 Garbage<br/>Collector ))
+  G ==> A1(<ins>**Designed for applications running on multi-processor machines with large memory space**</ins>)
+  G ==> N1(<ins>**Available from the JDK7 Update 4 and in later releases.**</ins>)
+  G ==> N2(Steps of cycle)
+  G ==> C1("<ins>**JVM Argument:**</ins><br/>java -XX:+UseG1GC -jar Application.java")
+
+  subgraph STEPS
+  N2 --> N21(G1 partitions the heap into a set of equal-sized heap regions, each a contiguous range of virtual memory)
+  N21 -.-> N22("G1 shows a concurrent global marking phase<br/>(i.e. phase 1, known as **Marking**) to determine the liveness of objects throughout the heap.")
+  N22 -.-> N23("G1 knows which regions are mostly empty. It collects in these areas first, which usually yields a significant amount of free space<br/>(i.e. phase 2, known as **Sweeping**)")
+  N23 -.-> N24(End of cycle)
+  N24 --> N2
+  end
+
+style G fill:#008c31,font-size:1rem,stroke-width: 0.2rem;
+style A1 stroke:#2eab00,stroke-width: 0.2rem;
+style N1 stroke:#0089a8,stroke-width: 0.2rem;
+style N2 fill:#0089a8,stroke-width: 0.2rem;
+style N21 stroke:#0089a8,stroke-width: 0.2rem;
+style N22 stroke:#0089a8,stroke-width: 0.2rem;
+style N23 stroke:#0089a8,stroke-width: 0.2rem;
+style N24 fill:#0089a8,stroke-width: 0.2rem;
+style C1 stroke-width: 0.2rem;
