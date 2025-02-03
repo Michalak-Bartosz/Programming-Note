@@ -1,2 +1,2 @@
-# Obsidian-Note-Java
-"Second brain" with notes about Java
+# Obsidian-Note-Programming
+"Second brain" repository with notes about Programming.
