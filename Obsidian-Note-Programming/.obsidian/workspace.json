@@ -11,10 +11,10 @@
             "id": "68632dd79676656c",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -160,43 +160,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "a13ae4b22a3d2fc8",
-    "type": "floating",
-    "children": [
-      {
-        "id": "77ad59a0929c8fdc",
-        "type": "window",
-        "children": [
-          {
-            "id": "a411eee0eb5a1aad",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "55e6064bbbc70f39",
-                "type": "leaf",
-                "state": {
-                  "type": "graph",
-                  "state": {},
-                  "icon": "lucide-git-fork",
-                  "title": "Graph view"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 436,
-        "y": 22,
-        "width": 2216,
-        "height": 1352,
-        "maximize": true,
-        "zoom": 0
-      }
-    ]
-  },
   "active": "68632dd79676656c",
   "lastOpenFiles": [
+    "Notes.index.md",
+    "Programming.index.md",
     "Programming/Design/Design.index.md",
     "Programming/Design/Programming Models/Programming Models.index.md",
     "Programming/Design/Programming Models/Structured or modular programming.md",
@@ -222,9 +189,7 @@
     "Programming/React.js/Projects/ShowcasePage/Text/Projects.md",
     "Programming/React.js/Projects/ShowcasePage/Text/Read.me.md",
     "Programming/Java/Other Subjects/Subjects.index.md",
-    "Programming/Java/Other Subjects/REST API.md",
     "Programming/Java/JavaConceptMap.canvas",
-    "Programming/Java/Knowledge.index.md",
     "Programming/Java/Other Subjects/Images/ExcalidrawFiles/JavaGarbageCollectors.excalidraw",
     "Programming/Java/Other Subjects/Garbage Collector/Mermaid/7.ZGarbageCollector.mmd",
     "Programming/Java/Other Subjects/Garbage Collector/Mermaid/6.G1GarbageCollector.mmd",

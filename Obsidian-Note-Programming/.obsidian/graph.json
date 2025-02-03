@@ -8,73 +8,66 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:Programming/Design  ",
+      "query": "path:Design  ",
       "color": {
         "a": 1,
         "rgb": 11033088
       }
     },
     {
-      "query": "path:Programming/React.js  ",
+      "query": "path:React.js  ",
       "color": {
         "a": 1,
         "rgb": 3789054
       }
     },
     {
-      "query": "path:Programming/Maven  ",
+      "query": "path:Maven  ",
       "color": {
         "a": 1,
         "rgb": 6073814
       }
     },
     {
-      "query": "path:\"Programming/Java/Best Practices\"  ",
+      "query": "path:\"Java/Best Practices\"  ",
       "color": {
         "a": 1,
         "rgb": 10257128
       }
     },
     {
-      "query": "path:Programming/Java/Frameworks  ",
+      "query": "path:Java/Frameworks  ",
       "color": {
         "a": 1,
         "rgb": 6084269
       }
     },
     {
-      "query": "path:Programming/Java/InterviewQuestions  ",
+      "query": "path:Java/InterviewQuestions  ",
       "color": {
         "a": 1,
         "rgb": 11657298
       }
     },
     {
-      "query": "path:Programming/Java/JDKs  ",
+      "query": "path:Java/JDKs  ",
       "color": {
         "a": 1,
         "rgb": 12398
       }
     },
     {
-      "query": "path:\"Programming/Java/Other Subjects\"  ",
+      "query": "path:\"Java/Other Subjects\"  ",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "path:Programming/Java",
+      "query": "path:Java",
       "color": {
         "a": 1,
         "rgb": 16087674
-      }
-    },
-    {
-      "query": "path:Programming ",
-      "color": {
-        "a": 1,
-        "rgb": 14293787
       }
     },
     {
