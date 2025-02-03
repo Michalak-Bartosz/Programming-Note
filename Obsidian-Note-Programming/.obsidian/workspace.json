@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "893a6dee72b7fd05",
+        "id": "157f9aeeee57b133",
         "type": "tabs",
         "children": [
           {
-            "id": "68632dd79676656c",
+            "id": "a1beb9f2e898bf87",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -160,8 +160,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "68632dd79676656c",
+  "active": "a1beb9f2e898bf87",
   "lastOpenFiles": [
+    "React.js/ReactJS.index.md",
+    "React.js/Knowledge/Knowledge.index.md",
     "Notes.index.md",
     "Programming.index.md",
     "Programming/Design/Design.index.md",
@@ -187,8 +189,6 @@
     "Programming/React.js/Projects/ShowcasePage/Text/AboutMe.md",
     "Programming/React.js/Projects/ShowcasePage/Text/Experience.md",
     "Programming/React.js/Projects/ShowcasePage/Text/Projects.md",
-    "Programming/React.js/Projects/ShowcasePage/Text/Read.me.md",
-    "Programming/Java/Other Subjects/Subjects.index.md",
     "Programming/Java/JavaConceptMap.canvas",
     "Programming/Java/Other Subjects/Images/ExcalidrawFiles/JavaGarbageCollectors.excalidraw",
     "Programming/Java/Other Subjects/Garbage Collector/Mermaid/7.ZGarbageCollector.mmd",
