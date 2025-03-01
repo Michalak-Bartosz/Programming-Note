@@ -11,13 +11,52 @@
             "id": "a1beb9f2e898bf87",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Kotlin/Kotlin Basics/KotlinBasics.index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "KotlinBasics.index"
+            }
+          },
+          {
+            "id": "5a038c73ba76afc9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kotlin/Kotlin Basics/KotlinBasics.index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "KotlinBasics.index"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -160,8 +199,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a1beb9f2e898bf87",
+  "active": "5a038c73ba76afc9",
   "lastOpenFiles": [
+    "Kotlin/Kotlin Basics/11. Multiple Arguments with `varargs`.md",
+    "Kotlin/Kotlin Basics/KotlinBasics.index.md",
+    "Kotlin/Kotlin.index.md",
+    "Kotlin/Kotlin Basics/10. Kotlin Functions.md",
+    "Kotlin/Kotlin Basics/9. The Elvis Operator.md",
+    "Kotlin/Kotlin Basics/8. Nullable Safe Calls.md",
+    "Kotlin/Kotlin Basics/7. Nullable Types.md",
+    "Kotlin/Kotlin Basics/6. Structural Equality.md",
+    "Kotlin/Kotlin Basics/5. If Else Conditionals.md",
+    "Kotlin/Kotlin Basics/4. Basic Types.md",
+    "Kotlin/Kotlin Basics/3. Providing a Type on a Variable.md",
+    "Kotlin/Kotlin Basics/2. Creating a Read-Only Variable.md",
+    "Kotlin/Kotlin Basics/1. Creating a Variable.md",
+    "Kotlin/Kotlin Basics",
+    "Kotlin/UserfullLinks.md",
+    "UsefullLinks.md",
+    "Java/Java.index.md",
+    "Java/JDKs/JDKs.index.md",
+    "Kotlin",
     "React.js/ReactJS.index.md",
     "React.js/Knowledge/Knowledge.index.md",
     "Notes.index.md",
@@ -171,24 +229,7 @@
     "Programming/Design/Programming Models/Structured or modular programming.md",
     "Programming/Design/Programming Models/Logical programming.md",
     "Programming/Design/Programming Models/Functional programming.md",
-    "Programming/Design/Programming Models/Imperative programming.md",
-    "Programming/Design/Programming Models/Declarative programming.md",
-    "Programming/Design/Design Principles/Design Principles.index.md",
-    "Programming/Design/Design Patterns/Design Patterns.index.md",
-    "Programming/Maven/Mvn.index.md",
-    "Programming/Maven/MavenCommands.md",
-    "Programming/Java/Java.index.md",
-    "Programming/Programming.index.md",
     "Programming/Which programming language should I learn first.pdf",
-    "Programming/React.js/Knowledge/Libraries & Resources.md",
-    "Programming/React.js/Knowledge/Knowledge.index.md",
-    "Programming/React.js/ReactJS.index.md",
-    "Programming/React.js/Projects/ReactProjects.index.md",
-    "Programming/React.js/Projects/ShowcasePage/ShowcasePage.index.md",
-    "Programming/React.js/Projects/ShowcasePage/Other/Ideas.md",
-    "Programming/React.js/Projects/ShowcasePage/Text/AboutMe.md",
-    "Programming/React.js/Projects/ShowcasePage/Text/Experience.md",
-    "Programming/React.js/Projects/ShowcasePage/Text/Projects.md",
     "Programming/Java/JavaConceptMap.canvas",
     "Programming/Java/Other Subjects/Images/ExcalidrawFiles/JavaGarbageCollectors.excalidraw",
     "Programming/Java/Other Subjects/Garbage Collector/Mermaid/7.ZGarbageCollector.mmd",
@@ -197,7 +238,6 @@
     "Programming/Java/Other Subjects/Garbage Collector/Mermaid/5.ParallelGarbageCollector.mmd",
     "Programming/Java/Other Subjects/Garbage Collector/Mermaid/3.JVMGarbageCollectorTypes.mmd",
     "Programming/Java/Other Subjects/Garbage Collector/Mermaid/2.GarbageCollectorAdvantagesAndDisadvantages.mmd",
-    "Programming/Java/Other Subjects/Garbage Collector/Mermaid/1.GeneralWorkFlowInOneCycleOfGarbageCollector.mmd",
     "Programming/Java/Other Subjects/Garbage Collector/Images/6.G1GarbageCollector.svg",
     "Programming/Java/Other Subjects/Garbage Collector/Images/7.ZGarbageCollector.svg",
     "Programming/Java/Other Subjects/Garbage Collector/Images/5.ParallelGarbageCollector.svg",
@@ -205,7 +245,6 @@
     "Programming/Java/Other Subjects/Garbage Collector/Images/2.GarbageCollectorAdvantagesAndDisadvantages.svg",
     "Programming/Java/Other Subjects/Garbage Collector/Images/3.JVMGarbageCollectorTypes.svg",
     "Programming/Java/Other Subjects/Garbage Collector/Images/1.GeneralWorkFlowInOneCycleOfGarbageCollector.svg",
-    "Programming/Java/Other Subjects/ComparatorComparable/Mermaid/ComparatorAndComparableInJava.mmd",
     "Programming/Java/Other Subjects/ComparatorComparable/Images/ComparatorAndComparableInJava.svg",
     "Programming/Java/Other Subjects/Java Memory Model/3.Tunning Heap.png",
     "Programming/Java/Other Subjects/Java Memory Model/2.Head divided.png"
