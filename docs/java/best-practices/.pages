@@ -1,0 +1,5 @@
+title: Best Practices
+nav:
+  - About: index.md
+  - 1. Functional Interfaces: 001_functional-interfaces-tips-and-best-practices.md
+  - 2. Lambda Expressions: 002_lambda-expressions-tips-and-best-practices.md

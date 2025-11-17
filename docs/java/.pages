@@ -1,9 +1,8 @@
 title: Java
 nav:
-  - index.md
-  - JDKs
-  - Best Practices
-  - Frameworks
-  - InterviewQuestions
-  - Other Subjects
-  - ...
+  - About: index.md
+  - JDK: jdk
+  - Best Practices: best-practices
+  - Frameworks: frameworks
+  - Interview Questions: interview-questions
+  - Other Subjects: other-subjects
