@@ -14,4 +14,4 @@ mkdocs-awesome-pages-plugin>=2.9.2
 
 # Mermaid diagrams and pan zoom
 mkdocs-mermaid2-plugin>=1.1.1
-mkdocs-panzoom-plugin>=1.0.0
+mkdocs-panzoom-plugin>=0.4.2
