@@ -37,7 +37,6 @@ theme:
     - navigation.tabs.sticky # Keep tabs visible when scrolling
     - navigation.indexes # Section index pages
     - navigation.top # Back to top button
-    - header.autohide # Auto-hide header when scrolling down
     - search.suggest # Search suggestions
     - search.highlight # Highlight search terms
     - search.share # Share search results
