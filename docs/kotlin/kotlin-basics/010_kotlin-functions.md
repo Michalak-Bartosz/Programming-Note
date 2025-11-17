@@ -17,6 +17,7 @@ println(greet("Alice"))
 Output: `Hello, Alice!`
 
 ---
+
 ## 2. Functions with Return Types
 
 In Kotlin, every function must specify its return type. If the function doesn't return anything, the return type is `Unit` (similar to `void` in Java).
@@ -32,6 +33,7 @@ fun add(a: Int, b: Int): Int {
 The function `add()` returns an `Int`, which is the sum of `a` and `b`.
 
 ---
+
 ## 3. Functions inside of Functions
 
 In Kotlin, you can define functions within other functions, making it possible to create local functions.
@@ -56,6 +58,7 @@ outerFunction()
 Output: `This is an inner function`
 
 ---
+
 ## 4. Single Line Expressions
 
 Kotlin allows functions to have single-expression bodies. These functions don't require the `return` keyword if they only contain a single expression.
@@ -69,6 +72,7 @@ fun multiply(a: Int, b: Int): Int = a * b
 In the above example, the function `multiply` returns the result of the expression `a * b`.
 
 ---
+
 ## 5. Function Arguments
 
 Kotlin functions can accept multiple arguments. The arguments are passed when the function is called.
@@ -90,6 +94,7 @@ greetPerson("Alice", 30)
 Output: `Hello, Alice! You are 30 years old.`
 
 ---
+
 ## 6. Named Parameters
 
 Kotlin allows you to pass arguments to functions by specifying the parameter names, making the code more readable, especially for functions with multiple parameters.
@@ -107,6 +112,7 @@ greetPerson(age = 30, name = "Alice")
 Named arguments help avoid errors when calling functions, especially if the order of parameters is incorrect.
 
 ---
+
 ## 7. Default Function Arguments
 
 You can provide default values for function parameters. This way, the caller can omit the argument and the default value will be used.
@@ -120,6 +126,7 @@ fun greetPerson(name: String = "Guest", age: Int = 25) {
 ```
 
 ---
+
 ## 8. Calling the Function:
 
 ```kotlin
@@ -189,7 +196,8 @@ Output:
 ```
 
 #### Notes on Overloading in Kotlin:
+
 - Kotlin resolves which overloaded function to call based on the number and types of arguments you pass to the function.
 - The **return type** of overloaded functions cannot be used to distinguish between functions. The function’s signature is determined only by its name and parameters.
-  
+
 If the function signatures are identical (same name, same number of parameters, and same types), Kotlin will give a compilation error.

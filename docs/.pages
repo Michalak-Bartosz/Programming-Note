@@ -1,8 +1,7 @@
 nav:
-  - index.md
-  - java
-  - kotlin
-  - design
-  - react-js
-  - maven
+  - About: index.md
+  - Java: java
+  - Kotlin: kotlin
+  - React-js: react-js
+  - Maven: maven
   - ...

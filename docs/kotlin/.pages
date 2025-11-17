@@ -1,6 +1,6 @@
 title: Kotlin
 nav:
-  - index.md
+  - About: index.md
   - Kotlin Basics: kotlin-basics
   - Useful Links: useful-links.md
   - ...

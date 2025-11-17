@@ -1,4 +1,4 @@
 title: Maven
 nav:
-  - index.md
-  - MavenCommands.md
+  - About: index.md
+  - Maven Commands: 001_maven-commands.md

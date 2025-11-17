@@ -1,12 +1,12 @@
 ---
-title: Tags:
+title: React.js
 tags:
   - Programming
   - React
+  - JavaScript
+  - Frontend
 ---
 
-# Tags:
- 
+# React.js
 
-# Content:
-[Knowledge.index](knowledge.index.md)
+React is a popular JavaScript library for building user interfaces, particularly single-page applications.

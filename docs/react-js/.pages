@@ -1,5 +1,5 @@
 title: React.js
 nav:
-  - index.md
-  - Knowledge
+  - About: index.md
+  - Libraries & Resources: 001_libraries-and-resources.md
   - ...

@@ -1,12 +1,10 @@
 ---
-title: Tags:
+title: Maven
 tags:
   - Java
   - Maven
 ---
 
-# Tags:
+# Maven
 
-
-# Content:
-1. [MavenCommands](mavencommands.md)
+Maven is a powerful build automation and project management tool primarily used for Java projects.
