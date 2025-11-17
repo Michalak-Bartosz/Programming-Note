@@ -6,9 +6,13 @@
   --color-light-gray: #BFC1C3;
   --color-white: #FFFFFF;
   --color-lightest: #F5F0F6;
-  
-  /* Light mode */
+}
+
+/* Light mode (default scheme) */
+[data-md-color-scheme="default"] {
   --md-primary-fg-color: #7E8287;
+  --md-primary-fg-color--light: #BFC1C3;
+  --md-primary-fg-color--dark: #54494B;
   --md-accent-fg-color: #54494B;
   --md-typeset-a-color: #1565c0;
 }
@@ -16,31 +20,35 @@
 /* Dark mode */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #54494B;
+  --md-primary-fg-color--light: #7E8287;
+  --md-primary-fg-color--dark: #272223;
   --md-accent-fg-color: #7E8287;
   --md-typeset-a-color: #42a5f5;
   --md-default-fg-color: #F5F0F6;
 }
 
 /* Link styling for better visibility */
-.md-typeset a {
-  color: #1565c0;
+[data-md-color-scheme="default"] .md-typeset a {
+  color: #1565c0 !important;
   text-decoration: underline;
   text-decoration-color: rgba(21, 101, 192, 0.3);
   transition: all 0.2s ease;
 }
 
-.md-typeset a:hover {
-  color: #0d47a1;
+[data-md-color-scheme="default"] .md-typeset a:hover {
+  color: #0d47a1 !important;
   text-decoration-color: #0d47a1;
 }
 
 [data-md-color-scheme="slate"] .md-typeset a {
-  color: #42a5f5;
+  color: #42a5f5 !important;
+  text-decoration: underline;
   text-decoration-color: rgba(66, 165, 245, 0.3);
+  transition: all 0.2s ease;
 }
 
 [data-md-color-scheme="slate"] .md-typeset a:hover {
-  color: #90caf9;
+  color: #90caf9 !important;
   text-decoration-color: #90caf9;
 }
 
