@@ -1,0 +1,8 @@
+title: API
+nav:
+    - 1. Enhanced Pseudo-Random Number Generators: 001_enhanced-pseudo-random-number-generators.md
+    - 2. Deprecate the Applet API for Removal: 002_deprecate-the-applet-api-for-removal.md
+    - 3. Remove RMI Activation: 003_remove-rmi-activation.md
+    - 4. Deprecate the Security Manager for Removal: 004_deprecate-the-security-manager-for-removal.md
+    - 5. Foreign Function & Memory API (Incubator): 005_foreign-function-and-memory-api-1-incubator.md
+    - 6. Vector API (Incubator): 006_vector-api-2-incubator.md

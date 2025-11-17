@@ -1,0 +1,9 @@
+title: API
+nav:
+    - 1. Sequenced Collections: 001_sequenced-collections.md
+    - 2. Foreign Function & Memory API (Preview): 002_foreign-function-and-memory-api-3-preview.md
+    - 3. Virtual Threads: 003_virtual-threads.md
+    - 4. Scoped Values (Preview): 004_scoped-values-1-preview.md
+    - 5. Vector API (Incubator): 005_vector-api-6-incubator.md
+    - 6. Key Encapsulation Mechanism API: 006_key-encapsulation-mechanism-api.md
+    - 7. Structured Concurrency (Preview): 007_structured-concurrency-1-preview.md

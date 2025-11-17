@@ -1,0 +1,7 @@
+title: Language
+nav:
+    - 1. String Templates (Preview): 001_string-templates-1-preview.md
+    - 2. Record Patterns: 002_record-patterns.md
+    - 3. Pattern Matching for switch: 003_pattern-matching-for-switch.md
+    - 4. Unnamed Patterns and Variables (Preview): 004_unnamed-patterns-and-variables-1-preview.md
+    - 5. Unnamed Classes and Instance Main Methods (Preview): 005_unnamed-classes-and-instance-main-methods-1-preview.md

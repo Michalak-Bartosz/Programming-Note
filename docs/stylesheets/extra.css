@@ -8,17 +8,40 @@
   --color-lightest: #F5F0F6;
   
   /* Light mode */
-  --md-primary-fg-color: #54494B;
-  --md-accent-fg-color: #7E8287;
-  --md-typeset-a-color: #54494B;
+  --md-primary-fg-color: #7E8287;
+  --md-accent-fg-color: #54494B;
+  --md-typeset-a-color: #1565c0;
 }
 
 /* Dark mode */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #54494B;
   --md-accent-fg-color: #7E8287;
-  --md-typeset-a-color: #F5F0F6;
+  --md-typeset-a-color: #42a5f5;
   --md-default-fg-color: #F5F0F6;
+}
+
+/* Link styling for better visibility */
+.md-typeset a {
+  color: #1565c0;
+  text-decoration: underline;
+  text-decoration-color: rgba(21, 101, 192, 0.3);
+  transition: all 0.2s ease;
+}
+
+.md-typeset a:hover {
+  color: #0d47a1;
+  text-decoration-color: #0d47a1;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #42a5f5;
+  text-decoration-color: rgba(66, 165, 245, 0.3);
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: #90caf9;
+  text-decoration-color: #90caf9;
 }
 
 /* Dark mode navigation - dark text on light navbar */
@@ -38,7 +61,7 @@
 
 /* Headings with color palette */
 h1 {
-  color: #54494B;
+  color: #272223;
   border-bottom: 2px solid #7E8287;
   padding-bottom: 0.3em;
   transition: all 0.3s ease;
@@ -50,7 +73,7 @@ h1:hover {
 }
 
 h2 {
-  color: #54494B;
+  color: #272223;
   border-bottom: 1px solid #BFC1C3;
   padding-bottom: 0.2em;
   transition: all 0.3s ease;

@@ -92,6 +92,9 @@ plugins:
       enable_creation_date: true
       type: date
   - awesome-pages
+  - mermaid2:
+  - panzoom:
+      full_screen: true
   - minify:
       minify_html: true
 

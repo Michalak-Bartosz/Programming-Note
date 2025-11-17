@@ -1,0 +1,5 @@
+title: JVM
+nav:
+    - 1. Generational ZGC: 001_generational-zgc.md
+    - 2. Deprecate the Windows 32-bit x86 Port for Removal: 002_deprecate-the-windows-32-bit-x86-port-for-removal.md
+    - 3. Prepare to Disallow the Dynamic Loading of Agents: 003_prepare-to-disallow-the-dynamic-loading-of-agents.md

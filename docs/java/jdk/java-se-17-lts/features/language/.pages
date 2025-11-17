@@ -1,0 +1,5 @@
+title: Language
+nav:
+    - 1. Restore Always-Strict Floating-Point Semantics: 001_restore-always-strict-floating-point-semantics.md
+    - 2. Pattern Matching for switch (Preview): 002_pattern-matching-for-switch-1-preview.md
+    - 3. Sealed Classes: 003_sealed-classes.md

@@ -1,0 +1,6 @@
+title: Tools
+nav:
+    - 1. Single Source File Launch: 001_single-source-file-launch.md
+    - 2. Flight Recorder: 002_flight-recorder.md
+    - 3. Pack200 deprecated: 003_pack200-deprecated.md
+    - 4. No more frames in JavaDoc: 004_no-more-frames-in-javadoc.md

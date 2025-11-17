@@ -1,8 +1,8 @@
 title: Java JDKs
 nav:
   - index.md
-  - Java SE 8 LTS
-  - Java SE 11 LTS
-  - Java SE 17 LTS
-  - Java SE 21 LTS
-  - Summary
+  - Java SE 8 LTS: java-se-8-lts
+  - Java SE 11 LTS: java-se-11-lts
+  - Java SE 17 LTS: java-se-17-lts
+  - Java SE 21 LTS: java-se-21-lts
+  - Summary: summary
