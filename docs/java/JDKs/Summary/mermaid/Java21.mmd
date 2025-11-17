@@ -1,0 +1,75 @@
+graph LR
+    A(("Java SE 21<br/>(Release: September 2023)")):::main
+    A --> F_1:::background
+    A --> F_2:::background
+    A --> F_3:::background
+    A --> F_4:::background
+    A --> F_5:::background
+    A --> F_6:::background
+    A --> F_7:::background
+    A --> F_8:::background
+    A --> F_9:::background
+    A --> F_10:::background
+
+    subgraph F_1["Pattern Matching for Switch"]
+    direction TB
+        F11("Extends pattern matching to switch statements")
+        F12("Example: case Integer i -> System.out.println(i);")
+    end
+
+    subgraph F_2["Record Patterns"]
+    direction TB
+        F21("Pattern matching on record components")
+        F22("Improves readability in data-oriented code")
+    end
+    
+    subgraph F_3["Virtual Threads"]
+    direction TB
+        F31("Lightweight concurrency with virtual threads")
+        F32("Easier parallel code")
+    end
+    
+    subgraph F_4["Sequenced Collections"]
+    direction TB
+        F41("New SequencedCollection interface")
+        F42("Methods like first() and last() for ordered collections")
+    end
+
+    subgraph F_5["Foreign Function Memory"]
+    direction TB
+        F51("Efficient interaction with native code and memory")
+        F52("Allocating off-heap memory and accessing it")
+    end
+
+    subgraph F_6["Vector API"]
+    direction TB
+        F61("Enhanced vector computation efficiency")
+        F62("Improves performance for vectorized operations")
+    end
+
+    subgraph F_7["Structured Concurrency"]
+    direction TB
+        F71("Simplifies multithreaded programming")
+        F72("Tasks as a single unit of work")
+    end
+
+    subgraph F_8["String Templates"]
+    direction TB
+        F81("Embed variables directly within strings")
+        F82("Reduces boilerplate in string manipulation")
+    end
+
+    subgraph F_9["Scoped Values"]
+    direction TB
+        F91("Safe sharing of immutable data within specific areas")
+        F92("Supports task-local data management")
+    end
+
+    subgraph F_10["Deprecations and Removals"]
+    direction TB
+        F101("Ongoing removal of outdated features and APIs")
+        F102("Streamlines the JDK further")
+    end
+
+classDef main fill:#008c31,font-size:1.4rem,stroke-width: 0.2rem;
+classDef background fill:#0089a8,fill-opacity: 0.2;

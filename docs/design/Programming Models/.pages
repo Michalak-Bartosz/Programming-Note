@@ -1,0 +1,8 @@
+title: Programming Models
+nav:
+  - index.md
+  - Declarative programming.md
+  - Functional programming.md
+  - Imperative programming.md
+  - Logical programming.md
+  - Structured or modular programming.md

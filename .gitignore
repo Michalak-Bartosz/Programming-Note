@@ -1,10 +1,27 @@
-# Exclude workspace cache
-/Obsidian/ObsidianNotes/.obsidian/graph.json
-/Obsidian/ObsidianNotes/.obsidian/workspace.json
-/Obsidian/ObsidianNotes/.obsidian/workspace-mobile.json
+# Obsidian workspace cache
+.obsidian/workspace*.json
+.obsidian/graph.json
+.obsidian/plugins/*
+.trash/
 
-# Exclude plugins
-/Obsidian/ObsidianNotes/.obsidian/plugins/*
+# MkDocs build output
+site/
+.cache/
 
-# Add below lines to exclude trashes
-/Obsidian/ObsidianNotes/.trash
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

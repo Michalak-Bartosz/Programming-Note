@@ -1,0 +1,13 @@
+# MkDocs and plugins
+mkdocs>=1.5.3
+mkdocs-material>=9.4.0
+mkdocs-minify-plugin>=0.7.1
+
+# Additional plugins
+pymdown-extensions>=10.3
+markdown>=3.5
+Pygments>=2.16.1
+
+# Optional but useful
+mkdocs-git-revision-date-localized-plugin>=1.2.1
+mkdocs-awesome-pages-plugin>=2.9.2

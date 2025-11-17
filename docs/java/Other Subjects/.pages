@@ -1,0 +1,12 @@
+title: Core Concepts
+nav:
+  - index.md
+  - OOP
+  - Java History
+  - Java Platform Editions
+  - Java Memory Model
+  - Garbage Collector
+  - Comparisons
+  - ComparatorComparable
+  - Modifiers Descriptions
+  - ...

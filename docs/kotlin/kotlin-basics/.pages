@@ -1,0 +1,13 @@
+title: Kotlin Basics
+nav:
+  - 1. Creating a Variable: 001_creating-a-variable.md
+  - 2. Creating a Read-Only Variable: 002_creating-a-read-only-variable.md
+  - 3. Providing a Type on a Variable: 003_providing-a-type-on-a-variable.md
+  - 4. Basic Types: 004_basic-types.md
+  - 5. If-Else Conditionals: 005_if-else-conditionals.md
+  - 6. Structural Equality: 006_structural-equality.md
+  - 7. Nullable Types: 007_nullable-types.md
+  - 8. Nullable Safe Calls: 008_nullable-safe-calls.md
+  - 9. The Elvis Operator: 009_the-elvis-operator.md
+  - 10. Kotlin Functions: 010_kotlin-functions.md
+  - 11. Multiple Arguments with varargs: 011_multiple-arguments-with-varargs.md

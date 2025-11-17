@@ -1,0 +1,34 @@
+---
+title: Z Garbage Collector (ZGC)
+---
+graph LR
+  G((ZGC))
+  subgraph ADVANTAGES
+    A1(<ins>**Scalable and low-latency garbage collector**</ins>)
+    A2(Similar to G1, Z Garbage Collector partitions the heap, except that<br/><ins>**heap regions can have different sizes.**</ins>)
+    A3(ZGC works without stopping the execution of application threads for <ins>**more than 10 ms**</ins>, which makes it suitable for applications that require low latency.)
+    A4(It uses load barriers with colored pointers to perform concurrent operations when the threads are running, and they’re used to keep track of heap usage.)
+  end
+  subgraph FEATURE
+    N1(<ins>**ZGC has obtained the production status from Java 15 onwards**</ins>)
+    N2("<ins>**Reference colored pointers are the core concept of ZGC.**</ins> It means that ZGC uses some metadata bits of reference to mark the state of the object. It also handles heaps ranging <ins>from 8MB to 16TB in size.</ins>")
+    N3("Pause times don’t increase with the heap, live-set, or root-set size.")
+  end
+  subgraph ENABLE_ZGC [ENABLE ZGC]
+    C1("<ins>**JDK versions lower than 15<br/>JVM Argument:**</ins><br/><span style='white-space: nowrap'>java -XX:+UnlockExperimentalVMOptions -XX:+UseZGC Application.java</span>")
+    C2("<ins>**From version 15 on, we don’t need experimental mode on<br/>JVM Argument:**</ins><br/><span style='white-space: nowrap'>java -XX:+UseZGC Application.java</span>")
+  end
+  G ==> ADVANTAGES
+  G ==> FEATURE
+  G ==> ENABLE_ZGC
+
+style G fill:#008c31,font-size:2rem,stroke-width: 0.2rem;
+style A1 stroke:#2eab00,stroke-width: 0.2rem;
+style A2 stroke:#2eab00,stroke-width: 0.2rem;
+style A3 stroke:#2eab00,stroke-width: 0.2rem;
+style A4 stroke:#2eab00,stroke-width: 0.2rem;
+style N1 stroke:#0089a8,stroke-width: 0.2rem;
+style N2 stroke:#0089a8,stroke-width: 0.2rem;
+style N3 stroke:#0089a8,stroke-width: 0.2rem;
+style C1 stroke-width: 0.2rem;
+style C2 stroke-width: 0.2rem;
