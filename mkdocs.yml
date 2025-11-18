@@ -90,13 +90,12 @@ plugins:
   - tags:
       listings: true
       tags_hierarchy: true
-      tags_sort_by: !!python/name:hooks.tag_name_natural
-      listings_sort_by: !!python/name:hooks.item_title_natural
 
 # Additional CSS
 extra_css:
   - stylesheets/style.css
   - stylesheets/header.css
+
 
 # Additional JavaScript
 extra_javascript:
