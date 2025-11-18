@@ -1,8 +1,11 @@
 ---
-title: 1. <ins>Sequenced Collections</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - Sequenced Collections
+  - Collections API
 ---
 
-# 1. <ins>Sequenced Collections</ins>
+# Sequenced Collections
 
+#TODO

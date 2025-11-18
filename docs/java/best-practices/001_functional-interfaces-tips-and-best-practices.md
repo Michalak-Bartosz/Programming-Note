@@ -1,11 +1,19 @@
-# 1. <ins>Functional Interfaces - Tips and Best Practices</ins>
+---
+tags:
+  - Java
+  - Functional Programming
+  - Best Practices
+  - Functional Interfaces
+---
 
-# 2. <ins>Referred Functionalities:</ins>
-1. [Functional Interfaces](functional-interfaces.md)
-# 3. <ins>Tips:</ins>
-## 3.1. <ins>Prefer Standard Functional Interfaces</ins>
+# 1. Functional Interfaces - Tips and Best Practices
 
-Functional interfaces, which are gathered in the [java.util.function APIs](java.util.function-apis.md) package, satisfy most developers’ needs in providing target types for lambda expressions and method references. Each of these interfaces is general and abstract, making them easy to adapt to almost any lambda expression. Developers should explore this package before creating new functional interfaces.
+# 2. Referred Functionalities:
+1. [Functional Interfaces](../other-subjects/005_functional-interfaces.md)
+# 3. Tips:
+## 3.1. Prefer Standard Functional Interfaces
+
+Functional interfaces, which are gathered in the [java.util.function APIs](../jdk/java-se-8-lts/features/api/002_java-util-function-apis.md) package, satisfy most developers’ needs in providing target types for lambda expressions and method references. Each of these interfaces is general and abstract, making them easy to adapt to almost any lambda expression. Developers should explore this package before creating new functional interfaces.
 
 **Example:**
 This new functional interface...
@@ -36,7 +44,7 @@ Function<String, String> fn = parameter -> parameter + " from lambda";
 String result = useFoo.add("Message ", fn);
 ```
 
-## 3.2. <ins>Use the @FunctionalInterface Annotation</ins>
+## 3.2. Use the @FunctionalInterface Annotation
 
 Annotate our functional interfaces with *@FunctionalInterface* At first, this annotation seems to be useless. Even without it, our interface will be treated as functional as long as it has just one abstract method.
 
@@ -44,7 +52,7 @@ However, let’s imagine a big project with several interfaces; it’s hard to c
 
 By using the _@FunctionalInterface_ annotation, the compiler will trigger an error in response to any attempt to break the predefined structure of a functional interface. It is also a very handy tool to make our application architecture easier to understand for other developers.
 
-## 3.3. <ins>Don’t Overuse Default Methods in Functional Interfaces</ins>
+## 3.3. Don’t Overuse Default Methods in Functional Interfaces
 
 We can easily add default methods to the functional interface. This is acceptable to the functional interface contract as long as there is only one abstract method declaration. 
 ```java
@@ -105,7 +113,7 @@ public interface FooExtended extends Baz, Bar {
 ```
 It’s important to note that we have to be careful. **Adding too many default methods to the interface is not a very good architectural decision.** This should be considered a compromise, only to be used when required for upgrading existing interfaces without breaking backward compatibility.
 
-## 3.4. <ins>Instantiate Functional Interfaces With Lambda Expressions</ins>
+## 3.4. Instantiate Functional Interfaces With Lambda Expressions
 
 The compiler will allow us to use an inner class to instantiate a functional interface; however, this can lead to very verbose code. We should prefer to use lambda expressions:
 ```java
@@ -122,7 +130,7 @@ Foo fooByIC = new Foo() {
 ```
 **The lambda expression approach can be used for any suitable interface from old libraries.** It is usable for interfaces like _Runnable_, _Comparator_, and so on; **however, this doesn’t mean that we should review our whole older code base and change everything.**
 
-## 3.5. <ins>Avoid Overloading Methods With Functional Interfaces as Parameters</ins>
+## 3.5. Avoid Overloading Methods With Functional Interfaces as Parameters
 
 We should use methods with different names to avoid collisions.
 **Example:**
@@ -167,4 +175,4 @@ String result = processor.process((Supplier<String>) () -> "abc");
 ```
 
 # **References:**
-1. https://www.baeldung.com/java-8-lambda-expressions-tips
+1. [Baeldung - Java 8 Lambda Expressions Tips](https://www.baeldung.com/java-8-lambda-expressions-tips){ target="_blank" rel="noopener noreferrer" }

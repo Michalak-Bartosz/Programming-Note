@@ -1,2 +1,11 @@
-# 1. <ins>CONSTANT_Dynamic</ins>
+---
+tags:
+  - Java
+  - Java 11
+  - JVM
+  - Constant Dynamic
+---
+
+# 1. CONSTANT_Dynamic
+
 #TODO

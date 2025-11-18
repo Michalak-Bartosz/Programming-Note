@@ -1,8 +1,12 @@
 ---
-title: 1. <ins>Strongly Encapsulate JDK Internals</ins>
 tags:
-  - TODO
+  - Java
+  - Java 17
+  - JVM
+  - Encapsulation
+  - Security
 ---
 
-# 1. <ins>Strongly Encapsulate JDK Internals</ins>
+# Strongly Encapsulate JDK Internals
 
+#TODO

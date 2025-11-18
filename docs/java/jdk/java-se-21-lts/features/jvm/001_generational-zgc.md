@@ -1,8 +1,12 @@
 ---
-title: 1. <ins>Generational ZGC</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - JVM
+  - ZGC
+  - Garbage Collection
 ---
 
-# 1. <ins>Generational ZGC</ins>
+# Generational ZGC
 
+#TODO

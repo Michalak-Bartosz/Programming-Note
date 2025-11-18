@@ -1,8 +1,12 @@
 ---
-title: 1. <ins>Deprecate the Security Manager for Removal</ins>
 tags:
-  - TODO
+  - Java
+  - Java 17
+  - Security Manager
+  - Deprecation
+  - Security
 ---
 
-# 1. <ins>Deprecate the Security Manager for Removal</ins>
+# Deprecate the Security Manager for Removal
 
+#TODO

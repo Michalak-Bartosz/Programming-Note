@@ -1,3 +1,12 @@
+---
+tags:
+  - Kotlin
+  - Variables
+  - Basics
+---
+
+# Creating a Variable
+
 In Kotlin, variables are declared using either `val` (for immutable variables) or `var` (for mutable variables).
 
 - **Mutable Variables**: Use `var` to declare a variable whose value can change.

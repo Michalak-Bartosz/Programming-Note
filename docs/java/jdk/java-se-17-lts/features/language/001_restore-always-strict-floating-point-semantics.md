@@ -1,8 +1,11 @@
 ---
-title: 1. <ins>Restore Always-Strict Floating-Point Semantics</ins>
 tags:
-  - TODO
+  - Java
+  - Java 17
+  - Floating Point
+  - Semantics
 ---
 
-# 1. <ins>Restore Always-Strict Floating-Point Semantics</ins>
+# Restore Always-Strict Floating-Point Semantics
 
+#TODO

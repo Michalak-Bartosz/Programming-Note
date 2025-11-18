@@ -1,8 +1,11 @@
 ---
-title: 1. <ins>Sealed Classes</ins>
 tags:
-  - TODO
+  - Java
+  - Java 17
+  - Sealed Classes
+  - OOP
 ---
 
-# 1. <ins>Sealed Classes</ins>
+# Sealed Classes
 
+#TODO

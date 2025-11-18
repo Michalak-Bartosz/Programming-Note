@@ -1,2 +1,2 @@
-# 1. <ins>Low-Overhead Heap Profiling</ins>
+# 1. Low-Overhead Heap Profiling
 #TODO

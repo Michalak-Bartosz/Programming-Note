@@ -1,11 +1,12 @@
 ---
-title: Tags:
 tags:
   - Java
+  - Comparisons
 ---
 
-# Tags:
+# Comparisons
 
+Comparison guides between different Java concepts and features.
 
-# 1. Comparisons:
-1. [Abstract Classes Compared to Interfaces](abstract-classes-compared-to-interfaces.md)
+## Content:
+1. [Abstract Classes Compared to Interfaces](001_abstract-classes-compared-to-interfaces.md)

@@ -1,2 +1,2 @@
-# 1. <ins>Pack200 deprecated</ins>
+# 1. Pack200 deprecated
 #TODO

@@ -1,8 +1,11 @@
 ---
-title: 1. <ins>Pattern Matching for switch</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - Pattern Matching
+  - Switch
 ---
 
-# 1. <ins>Pattern Matching for switch</ins>
+# Pattern Matching for switch
 
+#TODO

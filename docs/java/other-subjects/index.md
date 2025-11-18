@@ -1,39 +1,40 @@
 ---
-title: Tags:
 tags:
   - Java
+  - Core Concepts
 ---
 
-# Tags:
+# Core Concepts
 
+Collection of core Java concepts and fundamental topics.
 
-# 1. <ins>Subjects:</ins>
-1. [Annotations](annotations.md)
-2. [Anonymous Classes](anonymous-classes.md)
-3. [Comparator and Comparable](comparator-and-comparable.md)
-4. [Cookie](cookie.md)
-5. [Data Modeling](data-modeling.md)
-6. [Functional Interfaces](functional-interfaces.md)
-7. [Immutable Objects](immutable-objects.md)
-8. [Interface](interface.md)
-9. [Java Compiler](java-compiler.md)
-11. [Java Development Process](java-development-process.md)
-12. [Java Modifiers](java-modifiers.md)
-13. [Java String Pool](java-string-pool.md)
-14. [Java Virtual Machine](java-virtual-machine.md)
-15. [JIT Compilation](jit-compilation.md)
-16. [JVM Garbage Collectors](jvm-garbage-collectors.md)
-17. [JVM Parameters](jvm-parameters.md)
-18. [OWASP](owasp.md)
-19. [Reflection API](reflection-api.md)
-20. [REST API](rest-api.md)
-21. [Type Inference](type-inference.md)
-22. [URI, URL and URN](uri,-url-and-urn.md)
+## Content:
+1. [Annotations](001_annotations.md)
+2. [Anonymous Classes](002_anonymous-classes.md)
+3. [Cookie](003_cookie.md)
+4. [Data Modeling](004_data-modeling.md)
+5. [Functional Interfaces](005_functional-interfaces.md)
+6. [Immutable Objects](006_immutable-objects.md)
+7. [Interface](007_interface.md)
+8. [Java Compiler](008_java-compiler.md)
+9. [Java Development Process](009_java-development-process.md)
+10. [Java Modifiers](010_java-modifiers.md)
+11. [Java String Pool](011_java-string-pool.md)
+12. [Java Virtual Machine](012_java-virtual-machine.md)
+13. [JIT Compilation](013_jit-compilation.md)
+14. [JVM Parameters](014_jvm-parameters.md)
+15. [OWASP](015_owasp.md)
+16. [Reflection API](016_reflection-api.md)
+17. [REST API](017_rest-api.md)
+18. [Type Inference](018_type-inference.md)
+19. [URI, URL and URN](019_uri-url-and-urn.md)
 
-## 1.1. <ins>Sub-subjects:</ins>
-23. [Comparisons.index](comparisons.index.md)
-24. [Java History.index](java-history.index.md)
-25. [Java Memory Model](java-memory-model.md)
-26. [Java Platform Editions.index](java-platform-editions.index.md)
-27. [Modifiers Descriptions.index](modifiers-descriptions.index.md)
-28. [OOP.index](oop.index.md)
+## Sub-topics:
+- [OOP](oop/index.md)
+- [Java History](java-history/index.md)
+- [Java Platform Editions](java-platform-editions/index.md)
+- [Java Memory Model](java-memory-model/index.md)
+- [Garbage Collector](garbage-collector/index.md)
+- [Comparisons](comparisons/index.md)
+- [Comparator and Comparable](comparator-comparable/index.md)
+- [Modifiers Descriptions](modifiers-descriptions/index.md)

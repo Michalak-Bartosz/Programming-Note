@@ -1,5 +1,12 @@
-
 ---
+tags:
+  - Java
+  - Spring Boot
+  - Interview Questions
+---
+
+# Spring Boot Interview Questions
+
 ### ***Q1. What Is Spring Boot and What Are Its Main Features?***
 
 Spring Boot is essentially a framework for rapid application development built on top of the Spring Framework. With its auto-configuration and embedded application server support, combined with the extensive documentation and community support it enjoys, Spring Boot is one of the most popular technologies in the Java ecosystem as of date.
@@ -339,4 +346,4 @@ For example, we might be using an embedded H2 database for Dev, but Prod could h
 To make this easy and clean, **Spring has the provision of profiles to help separate the configuration for each environment**. So, instead of maintaining this programmatically, the properties can be kept in separate files such as *application-dev.properties* and *application-prod.properties*. The default *application.properties* points to the currently active profile using *spring.profiles.active* so that the correct configuration is picked up.
 
 # **References:**
-1. [# Spring Boot Interview Questions](https://www.baeldung.com/spring-boot-interview-questions)
+1. [Spring Boot Interview Questions](https://www.baeldung.com/spring-boot-interview-questions){ target="_blank" rel="noopener noreferrer" }

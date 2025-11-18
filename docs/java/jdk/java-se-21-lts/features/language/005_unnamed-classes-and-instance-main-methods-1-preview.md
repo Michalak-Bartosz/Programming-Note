@@ -1,8 +1,12 @@
 ---
-title: 1. <ins>Unnamed Classes and Instance Main Methods 1. Preview</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - Unnamed Classes
+  - Instance Main Methods
+  - Preview Features
 ---
 
-# 1. <ins>Unnamed Classes and Instance Main Methods 1. Preview</ins>
+# Unnamed Classes and Instance Main Methods (Preview)
 
+#TODO

@@ -1,5 +1,12 @@
-
 ---
+tags:
+  - Java
+  - Java 11
+  - Interview Questions
+---
+
+# Java 11 Interview Questions
+
 ### ***Q1: What are the methods added in String API in Java 11?***
 
 * **isBlank** - returns true if the String is empty or contains only spaces

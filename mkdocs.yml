@@ -46,7 +46,7 @@ theme:
   icon:
     repo: "fontawesome/brands/github"
 
-  favicon: "assets/images/dark_logo.png"
+  # favicon will be handled dynamically by JavaScript
   logo: "assets/images/dark_logo.png"
 
 # Extensions
@@ -87,18 +87,26 @@ plugins:
       full_screen: true
   - minify:
       minify_html: true
-  - tags
+  - tags:
+      tags_hierarchy: true
+      tags_sort_by: !!python/name:custom_sort.tag_name_natural
+      listings_sort_by: !!python/name:custom_sort.item_title_natural
 
 # Additional CSS
 extra_css:
   - stylesheets/style.css
   - stylesheets/header.css
 
+# Additional JavaScript
+extra_javascript:
+  - assets/javascripts/theme-favicon.js
+
 # Extra
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Michalak-Bartosz
+  generator: false
 
 # Copyright footer
 copyright: Copyright © 2025 Michalak-Bartosz | <strong>Programming-Note</strong> | A comprehensive collection of programming notes and best practices.

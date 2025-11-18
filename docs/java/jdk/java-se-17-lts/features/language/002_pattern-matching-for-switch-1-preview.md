@@ -1,8 +1,12 @@
 ---
-title: 1. <ins>Pattern Matching for switch 1. Preview</ins>
 tags:
-  - TODO
+  - Java
+  - Java 17
+  - Pattern Matching
+  - Switch
+  - Preview Features
 ---
 
-# 1. <ins>Pattern Matching for switch 1. Preview</ins>
+# Pattern Matching for switch (Preview)
 
+#TODO

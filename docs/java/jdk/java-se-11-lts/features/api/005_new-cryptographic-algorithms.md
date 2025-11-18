@@ -1,2 +1,2 @@
-# 1. <ins>New Cryptographic Algorithms</ins>
+# 1. New Cryptographic Algorithms
 #TODO

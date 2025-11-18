@@ -1,6 +1,4 @@
 ---
-title: Java SE 17 LTS
-description: Java SE 17 Long Term Support - Main Features and Enhancements
 tags:
   - Java
   - JDK
@@ -8,7 +6,7 @@ tags:
   - LTS
 ---
 
-# <ins>Java SE 17 LTS Main Features:</ins>
+# Java SE 17 LTS Main Features:
 
 ## _JVM_
 

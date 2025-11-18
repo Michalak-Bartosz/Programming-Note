@@ -1,16 +1,23 @@
-
 ---
+tags:
+  - Java
+  - Java 8
+  - Interview Questions
+---
+
+# Java 8 Interview Questions
+
 ### ***Q1. What New Features Were Added in Java 8?***
 
 Java 8 ships with several new features, but the most significant are the following:
-- **Lambda Expressions** − a new language feature allowing us to treat actions as objects
-- **Method References** − enable us to define Lambda Expressions by referring to methods directly using their names
-- _**Optional**_ − special wrapper class used for expressing optionality
-- **Functional Interface** – an interface with maximum one abstract method; implementation can be provided using a Lambda Expression
-- **Default methods** − give us the ability to add full implementations in interfaces besides abstract methods
-- **Nashorn, JavaScript Engine** − Java-based engine for executing and evaluating JavaScript code
-- **_Stream_ API** − a special iterator class that allows us to process collections of objects in a functional manner
-- **Date API** − an improved, immutable JodaTime-inspired Date API
+- **Lambda Expressions** − a new language feature allowing us to treat actions as objects
+- **Method References** − enable us to define Lambda Expressions by referring to methods directly using their names
+- _**Optional**_ − special wrapper class used for expressing optionality
+- **Functional Interface** – an interface with maximum one abstract method; implementation can be provided using a Lambda Expression
+- **Default methods** − give us the ability to add full implementations in interfaces besides abstract methods
+- **Nashorn, JavaScript Engine** − Java-based engine for executing and evaluating JavaScript code
+- **_Stream_ API** − a special iterator class that allows us to process collections of objects in a functional manner
+- **Date API** − an improved, immutable JodaTime-inspired Date API
 
 Along with these new features, lots of feature enhancements are done under the hood at both the compiler and JVM level.
 

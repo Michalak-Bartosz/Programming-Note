@@ -1,8 +1,12 @@
 ---
-title: 1. <ins>Foreign Function & Memory API 1. Incubator</ins>
 tags:
-  - TODO
+  - Java
+  - Java 17
+  - Foreign Function
+  - Memory API
+  - Incubator
 ---
 
-# 1. <ins>Foreign Function & Memory API 1. Incubator</ins>
+# Foreign Function & Memory API (Incubator)
 
+#TODO

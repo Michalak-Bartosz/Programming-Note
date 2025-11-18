@@ -1,8 +1,11 @@
 ---
-title: 1. <ins>Virtual Threads</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - Virtual Threads
+  - Concurrency
 ---
 
-# 1. <ins>Virtual Threads</ins>
+# Virtual Threads
 
+#TODO

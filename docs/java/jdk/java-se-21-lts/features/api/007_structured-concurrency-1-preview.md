@@ -1,8 +1,12 @@
 ---
-title: 1. <ins>Structured Concurrency 1. Preview</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - Structured Concurrency
+  - Preview Features
+  - Concurrency
 ---
 
-# 1. <ins>Structured Concurrency 1. Preview</ins>
+# Structured Concurrency (Preview)
 
+#TODO

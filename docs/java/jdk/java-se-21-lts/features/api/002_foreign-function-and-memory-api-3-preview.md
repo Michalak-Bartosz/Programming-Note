@@ -1,8 +1,12 @@
 ---
-title: 1. <ins>Foreign Function & Memory API 3. Preview</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - Foreign Function
+  - Memory API
+  - Preview Features
 ---
 
-# 1. <ins>Foreign Function & Memory API 3. Preview</ins>
+# Foreign Function & Memory API (Preview)
 
+#TODO

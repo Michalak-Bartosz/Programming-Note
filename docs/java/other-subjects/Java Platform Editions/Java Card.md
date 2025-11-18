@@ -1,9 +1,0 @@
-# 1. <ins>Java Card</ins>
-
-**Java Card** is a software technology that allows Java-based applications (applets) to be run securely on smart cards and more generally on similar secure small memory footprint devices which are called "secure elements" (SE). Today, a secure element is not limited to its smart cards and other removable cryptographic tokens form factors; embedded SEs soldered onto a device board and new security designs embedded into general purpose chips are also widely used. **Java Card** addresses this hardware fragmentation and specificities while retaining code portability brought forward by Java.
-
-**Java Card** is the tiniest of Java platforms targeted for embedded devices. **Java Card** gives the user the ability to program the devices and make them application specific. It is widely used in different markets: wireless telecommunications within SIM cards and embedded SIM, payment within banking cards and NFC mobile payment and for identity cards, healthcare cards, and passports. Several IoT products like gateways are also using **Java Card** based products to secure communications with a cloud service for instance.
-
-The first **Java Card** was introduced in 1996 by Schlumberger's card division which later merged with Gemplus to form Gemalto. **Java Card** products are based on the specifications by [Sun Microsystems](sun-microsystems.md) (later a subsidiary of [Oracle Corporation](oracle-corporation.md)). Many Java card products also rely on the GlobalPlatform specifications for the secure management of applications on the card (download, installation, personalization, deletion).
-
-The main design goals of the **Java Card** technology are portability, security and backward compatibility.

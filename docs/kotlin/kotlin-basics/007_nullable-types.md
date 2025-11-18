@@ -1,3 +1,13 @@
+---
+tags:
+  - Kotlin
+  - Null Safety
+  - Nullable Types
+  - Basics
+---
+
+# Nullable Types
+
 In Kotlin, variables can be defined as nullable types. By default, Kotlin does not allow variables to hold `null` values unless explicitly declared as nullable. This is to eliminate `NullPointerException` (NPE) errors which are common in Java.
 
 ### Declaring Nullable Types
@@ -20,4 +30,4 @@ if (name != null) {
 }
 ```
 
-Alternatively, you can use Kotlin’s built-in features to safely access nullable properties.
+Alternatively, you can use Kotlin's built-in features to safely access nullable properties.

@@ -1,3 +1,13 @@
+---
+tags:
+  - Kotlin
+  - Variables
+  - Types
+  - Basics
+---
+
+# Providing a Type on a Variable
+
 While Kotlin can infer the type of a variable, you can explicitly specify the type if needed.
 
 ```kotlin

@@ -1,5 +1,12 @@
-
 ---
+tags:
+  - Java
+  - Java 17
+  - Interview Questions
+---
+
+# Java 17 Interview Questions
+
 ### ***Q1. What are the key features introduced in Java 17?***
 
 Java 17 introduced several important features including:

@@ -1,8 +1,11 @@
 ---
-title: 1. <ins>Remove RMI Activation</ins>
 tags:
-  - TODO
+  - Java
+  - Java 17
+  - RMI
+  - Deprecation
 ---
 
-# 1. <ins>Remove RMI Activation</ins>
+# Remove RMI Activation
 
+#TODO

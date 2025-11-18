@@ -1,8 +1,12 @@
 ---
-title: <ins>Prepare to Disallow the Dynamic Loading of Agents</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - JVM
+  - Agents
+  - Security
 ---
 
-# <ins>Prepare to Disallow the Dynamic Loading of Agents</ins>
+# Prepare to Disallow the Dynamic Loading of Agents
 
+#TODO

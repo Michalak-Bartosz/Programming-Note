@@ -1,10 +1,18 @@
-# 1. <ins>Type Use Annotations</ins>
+---
+tags:
+  - Java
+  - Java 8
+  - Annotations
+  - Type Annotations
+---
+
+# 1. Type Use Annotations
 
 **Before the Java SE 8** release, annotations could **only be applied to declarations**. As of the Java SE 8 release, annotations can also be applied to any type use. This means that annotations can be used anywhere you use a type.
 
-A few examples of where types are used are class instance creation expressions (new), casts, implements clauses, and throws clauses. This form of annotation is called a type annotation and several examples are provided in [Annotations](annotations.md).
+A few examples of where types are used are class instance creation expressions (new), casts, implements clauses, and throws clauses. This form of annotation is called a type annotation and several examples are provided in [Annotations](../../../../other-subjects/001_annotations.md).
 
-## 1.1. <ins>Type checking</ins>
+## 1.1. Type checking
 Type annotations were created to support improved analysis of Java programs way of ensuring stronger type checking. **The Java SE 8 release does not provide a type checking framework, but it allows you to write (or download) a type checking framework** that is implemented as one or more pluggable modules that are used in conjunction with the Java compiler.
 
 For example, you want to ensure that a particular variable in your program is never assigned to null; you want to avoid triggering a _NullPointerException_. You can write a custom plug-in to check for this. You would then modify your code to annotate that particular variable, indicating that it is never assigned to null. 
@@ -24,4 +32,4 @@ With the judicious use of type annotations and the presence of pluggable type ch
 In many cases, you do not have to write your own type checking modules. **There are third parties who have done the work for you.** For example, you might want to take advantage of the [**_Checker Framework_**](https://checkerframework.org/) created by the University of Washington. This framework includes a NonNull module, as well as a regular expression module, and a mutex lock module.
 
 # **References:**
-1. [Oracle - type annotations](https://docs.oracle.com/javase/tutorial/java/annotations/type_annotations.html)
+1. [Oracle - type annotations](https://docs.oracle.com/javase/tutorial/java/annotations/type_annotations.html){ target="_blank" rel="noopener noreferrer" }

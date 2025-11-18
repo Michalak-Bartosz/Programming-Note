@@ -1,8 +1,11 @@
 ---
-title: 1. <ins>Enhanced Pseudo-Random Number Generators</ins>
 tags:
-  - TODO
+  - Java
+  - Java 17
+  - Random Number Generators
+  - API Enhancement
 ---
 
-# 1. <ins>Enhanced Pseudo-Random Number Generators</ins>
+# Enhanced Pseudo-Random Number Generators
 
+#TODO

@@ -1,34 +1,29 @@
 ---
-title: Java JDK Comparison Summary
-description: Comprehensive comparison of Java SE versions 8, 11, 17, and 21 with features, examples, and evolution overview
 tags:
   - Java
   - JDK
-  - Java 8
-  - Java 11
-  - Java 17
-  - Java 21
-  - LTS
   - Comparison
 ---
 
+# Java JDK Comparison Summary
+
 ## Table of Contents
 
-- [1. **<ins>Java SE 8</ins> | Release Date:** March 2014]
-- [2. **<ins>Java SE 11</ins> | Release Date:** September 2018]
-- [3. **<ins>Java SE 17</ins> | Release Date:** September 2021]
-- [4. **<ins>Java SE 21</ins> | Release Date:** September 2023]
-- [**<ins>Comparison</ins>**]
-- [**<ins>Summary</ins>**]
-  - [1. **<ins>Language Features</ins>**]
-  - [2. **<ins>APIs</ins>**]
-  - [3. **<ins>Performance</ins>**]
-  - [4. **<ins>Deprecations and Removals</ins>**]
+- [1. **Java SE 8 | Release Date:** March 2014]
+- [2. **Java SE 11 | Release Date:** September 2018]
+- [3. **Java SE 17 | Release Date:** September 2021]
+- [4. **Java SE 21 | Release Date:** September 2023]
+- [**Comparison**]
+- [**Summary**]
+  - [1. **Language Features**]
+  - [2. **APIs**]
+  - [3. **Performance**]
+  - [4. **Deprecations and Removals**]
 
-# 1. **<ins>Java SE 8</ins> | Release Date:** March 2014
+# 1. **Java SE 8 | Release Date:** March 2014
 
 <details>
-  <summary><ins>Mind Map</ins></summary>
+  <summary>Mind Map</summary>
   </br>
 
 ```mermaid
@@ -99,7 +94,7 @@ classDef background fill:#0089a8,fill-opacity: 0.2;
 </details>
 
 <details>
-  <summary><ins>Main Features</ins></summary>
+  <summary>Main Features</summary>
   </br>
   
 1. **Lambda Expressions**
@@ -292,10 +287,10 @@ classDef background fill:#0089a8,fill-opacity: 0.2;
 
 ---
 
-# 2. **<ins>Java SE 11</ins> | Release Date:** September 2018
+# 2. **Java SE 11 | Release Date:** September 2018
 
 <details>
-  <summary><ins>Mind Map</ins></summary>
+  <summary>Mind Map</summary>
   </br>
 
 ```mermaid
@@ -366,7 +361,7 @@ classDef background fill:#0089a8,fill-opacity: 0.2;
 </details>
 
 <details>
-  <summary><ins>Main Features</ins></summary>
+  <summary>Main Features</summary>
   </br>
 
 1. **Local-Variable Syntax for Lambda Parameters**
@@ -525,10 +520,10 @@ classDef background fill:#0089a8,fill-opacity: 0.2;
 
 ---
 
-# 3. **<ins>Java SE 17</ins> | Release Date:** September 2021
+# 3. **Java SE 17 | Release Date:** September 2021
 
 <details>
-  <summary><ins>Mind Map</ins></summary>
+  <summary>Mind Map</summary>
   </br>
 
 ```mermaid
@@ -601,7 +596,7 @@ classDef background fill:#0089a8,fill-opacity: 0.2;
 </details>
 
 <details>
-  <summary><ins>Main Features</ins></summary>
+  <summary>Main Features</summary>
   </br>
 
 1. **Sealed Classes**
@@ -726,10 +721,10 @@ classDef background fill:#0089a8,fill-opacity: 0.2;
 
 ---
 
-# 4. **<ins>Java SE 21</ins> | Release Date:** September 2023
+# 4. **Java SE 21 | Release Date:** September 2023
 
 <details>
-  <summary><ins>Mind Map</ins></summary>
+  <summary>Mind Map</summary>
   </br>
 
 ```mermaid
@@ -813,7 +808,7 @@ classDef background fill:#0089a8,fill-opacity: 0.2;
 </details>
 
 <details>
-  <summary><ins>Main Features</ins></summary>
+  <summary>Main Features</summary>
   </br>
 
 1. **Pattern Matching for Switch**
@@ -975,7 +970,7 @@ classDef background fill:#0089a8,fill-opacity: 0.2;
 
 ---
 
-# **<ins>Comparison</ins>**
+# **Comparison**
 
 | Feature                       | Java 8                      | Java 11                     | Java 17                     | Java 21                       |
 |-------------------------------|-----------------------------|-----------------------------|-----------------------------|-------------------------------|
@@ -991,23 +986,23 @@ classDef background fill:#0089a8,fill-opacity: 0.2;
 | **String Enhancements**       | Limited                     | `strip()`, `isBlank()`      | New methods added           | String Templates              |
 | **Scoped Values**             | 🚫                          | 🚫                          | 🚫                          | Preview                       |
 
-# **<ins>Summary</ins>**
+# **Summary**
 
 - **`Java 8 ` |** Introduced lambda expressions, streams, and a functional style, revolutionizing Java programming.
 - **`Java 11` |** Added modern features like the HTTP client and removed older modules, improving modularity.
 - **`Java 17` |** Added pattern matching, sealed classes, and performance improvements.
 - **`Java 21` |** Further advanced concurrency with virtual threads, structured concurrency, and introduced record patterns and scoped values, making Java more expressive and concurrent-friendly.
 
-## 1. **<ins>Language Features</ins>**
+## 1. **Language Features**
 Java 8 introduced major language features like lambdas and streams. Java 11, 17, and 21 continued to enhance the language with features like local-variable syntax for lambda parameters, sealed classes, and pattern matching.
 
-## 2. **<ins>APIs</ins>**
+## 2. **APIs**
 Each version brought new APIs and enhancements. Java 8 introduced the Stream API and new Date and Time API. Java 11 added the HTTP Client API. Java 17 and 21 introduced and enhanced APIs for foreign functions, memory access, and vector computations.
 
-## 3. **<ins>Performance</ins>**
+## 3. **Performance**
 Each version includes performance improvements and new garbage collectors. Java 11 introduced the Epsilon GC, and Java 17 and 21 continued to improve performance with features like virtual threads.
 
-## 4. **<ins>Deprecations and Removals</ins>**
+## 4. **Deprecations and Removals**
 Java 11 started the trend of removing outdated features, which continued in Java 17 and 21.
 
 ---

@@ -1,3 +1,13 @@
+---
+tags:
+  - Kotlin
+  - Null Safety
+  - Elvis Operator
+  - Basics
+---
+
+# The Elvis Operator
+
 The **Elvis operator** (`?:`) is a shorthand for handling nullable types. It allows you to provide a default value when a nullable variable is `null`.
 
 ```kotlin

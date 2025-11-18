@@ -1,3 +1,13 @@
+---
+tags:
+  - Kotlin
+  - Functions
+  - Varargs
+  - Basics
+---
+
+# Multiple Arguments with Varargs
+
 In Kotlin, you can pass a variable number of arguments to a function using the `varargs` keyword. This is equivalent to the varargs in Java, allowing you to pass an array of values or a list of values as individual arguments.
 
 ### Declaring `varargs`

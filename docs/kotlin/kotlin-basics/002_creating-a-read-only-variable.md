@@ -1,3 +1,12 @@
+---
+tags:
+  - Kotlin
+  - Variables
+  - Basics
+---
+
+# Creating a Read-Only Variable
+
 To create a variable that cannot be reassigned after its initial assignment, use `val`.
 
 ```kotlin

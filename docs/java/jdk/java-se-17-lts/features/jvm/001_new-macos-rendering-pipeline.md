@@ -1,8 +1,12 @@
 ---
-title: 1. <ins>New macOS Rendering Pipeline</ins>
 tags:
-  - TODO
+  - Java
+  - Java 17
+  - JVM
+  - macOS
+  - Rendering
 ---
 
-# 1. <ins>New macOS Rendering Pipeline</ins>
+# New macOS Rendering Pipeline
 
+#TODO

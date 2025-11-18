@@ -1,8 +1,12 @@
 ---
-title: 1. <ins>Deprecate the Windows 32-bit x86 Port for Removal</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - JVM
+  - Windows
+  - Deprecation
 ---
 
-# 1. <ins>Deprecate the Windows 32-bit x86 Port for Removal</ins>
+# Deprecate the Windows 32-bit x86 Port for Removal
 
+#TODO

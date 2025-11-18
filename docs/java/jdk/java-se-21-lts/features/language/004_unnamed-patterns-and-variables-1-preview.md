@@ -1,8 +1,11 @@
 ---
-title: 1. <ins>Unnamed Patterns and Variables 1. Preview</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - Unnamed Patterns
+  - Preview Features
 ---
 
-# 1. <ins>Unnamed Patterns and Variables 1. Preview</ins>
+# Unnamed Patterns and Variables (Preview)
 
+#TODO

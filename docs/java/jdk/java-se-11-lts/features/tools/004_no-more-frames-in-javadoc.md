@@ -1,2 +1,2 @@
-# 1. <ins>No more frames in JavaDoc</ins>
+# 1. No more frames in JavaDoc
 #TODO

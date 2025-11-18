@@ -1,3 +1,13 @@
+---
+tags:
+  - Kotlin
+  - Equality
+  - Comparison
+  - Basics
+---
+
+# Structural Equality
+
 Kotlin provides two types of equality comparison:
 
 1. **Structural Equality (`==`)**: Checks if the contents of two objects are the same (i.e., value equality).

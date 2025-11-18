@@ -1,3 +1,12 @@
+---
+tags:
+  - Kotlin
+  - Functions
+  - Basics
+---
+
+# Kotlin Functions
+
 ## 1. First Kotlin Function
 
 A Kotlin function is defined using the `fun` keyword. A simple function that returns a value is as follows:

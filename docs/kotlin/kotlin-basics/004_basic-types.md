@@ -1,3 +1,11 @@
+---
+tags:
+  - Kotlin
+  - Types
+  - Data Types
+  - Basics
+---
+
 # 1. Numbers
 
 Kotlin supports a variety of numeric types.

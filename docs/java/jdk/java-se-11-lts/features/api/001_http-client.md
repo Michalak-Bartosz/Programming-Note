@@ -1,4 +1,13 @@
-# 1. <ins>HTTP Client</ins>
+---
+tags:
+  - Java
+  - Java 11
+  - HTTP Client
+  - HTTP/2
+  - WebSocket
+---
+
+# 1. HTTP Client
 
 In Java 11 introduced HTTP client API that implements HTTP/2 and Web Socket.
 
@@ -8,7 +17,7 @@ Until very recently, Java provided only the _HttpURLConnection_ API, which is 
 
 Therefore, some widely used third-party libraries were commonly used, such as [Apache HttpClient](https://hc.apache.org/httpcomponents-client-ga/), [Jetty](https://eclipse.dev/jetty/documentation/jetty-9/index.html#http-client-api) and Spring’s [RestTemplate](https://www.baeldung.com/rest-template).
 
-## 1.1. <ins>Changes introduced in [JEP 321](https://openjdk.org/jeps/321)</ins>
+## 1.1. Changes introduced in [JEP 321](https://openjdk.org/jeps/321)
 
 1. The incubated HTTP API from Java 9 is now officially incorporated into the Java SE API. The new [HTTP APIs](https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/package-summary.html) can be found in package: **java.net.http.\***.
 2. The newer version of the HTTP protocol is designed to improve the overall performance of sending requests by a client and receiving responses from the server. This is achieved by introducing a number of changes such as stream multiplexing, header compression and push promises.
@@ -21,7 +30,7 @@ Therefore, some widely used third-party libraries were commonly used, such as [
 	- The _HttpResponse_<T> interface, _java.net.http.HttpResponse_
 	- The _WebSocket_ interface, _java.net.http.WebSocket_
 
-## 1.2. <ins>Problems With the Pre-Java 11 HTTP Client</ins>
+## 1.2. Problems With the Pre-Java 11 HTTP Client
 
 The existing _HttpURLConnection_ API and its implementation had numerous problems:
 
@@ -30,9 +39,9 @@ The existing _HttpURLConnection_ API and its implementation had numerous probl
 - It works in blocking mode only (i.e., one thread per request/response).
 - It is very hard to maintain.
 
-# 2. <ins>Elements of the HTTP API</ins>
+# 2. Elements of the HTTP API
 
-## 2.1. <ins>HTTP Request</ins>
+## 2.1. HTTP Request
 
 _HttpRequest_ is an object that represents the request we want to send. New instances can be created using _HttpRequest.Builder._
 
@@ -46,7 +55,7 @@ HttpRequest.newBuilder(request, (name, value) -> !name.equalsIgnoreCase("Foo-Bar
 ```
 There are the necessary actions needed to use HttpClient. They are listed below.
 
-### 2.1.1. <ins>Setting URI</ins>
+### 2.1.1. Setting URI
 The first thing we have to do when creating a request is to provide the URL.
 
 We can do that in two ways — using the constructor for _Builder_ with _URI_ ([[URI, URL and URN]]) parameter or calling method _uri(URI)_ on the _Builder_ instance:
@@ -59,7 +68,7 @@ HttpRequest.newBuilder()
   .uri(new URI("https://postman-echo.com/get"))
 ```
 
-### 2.1.2. <ins>HTTP Method</ins>
+### 2.1.2. HTTP Method
 
 The last thing we have to configure to create a basic request is an HTTP method.
 
@@ -86,7 +95,7 @@ However, we sometimes need to add additional parameters to our request. Here are
 * Headers
 * A timeout
 
-### 2.1.3. <ins>HTTP Protocol Version</ins>
+### 2.1.3. HTTP Protocol Version
 
 The API fully leverages the HTTP/2 protocol and uses it by default, but we can define which version of the protocol we want to use:
 
@@ -100,7 +109,7 @@ HttpRequest request = HttpRequest.newBuilder()
 
 Important to mention here is that the client will fall back to, e.g., HTTP/1.1 if HTTP/2 isn’t supported.
 
-### 2.1.4. <ins>Headers</ins>
+### 2.1.4. Headers
 
 In case we want to add additional headers to our request, we can use the provided builder methods.
 
@@ -124,7 +133,7 @@ HttpRequest request2 = HttpRequest.newBuilder()
 
 ```
 
-### 2.1.5. <ins>Timeout</ins>
+### 2.1.5. Timeout
 
 The last useful method we can use to customize our request is a timeout(). It's the amount of time we want to wait for a response.
 
@@ -140,7 +149,7 @@ HttpRequest request = HttpRequest.newBuilder()
   .build();
 ```
 
-### 2.1.6. <ins>Request Body</ins>
+### 2.1.6. Request Body
 
 We can add a body to a request by using the request builder methods:
 * POST(BodyPublisher body)
@@ -163,7 +172,7 @@ HttpRequest request = HttpRequest.newBuilder()
 ```
 **Note:** In JDK 16, there’s a new *HttpRequest.BodyPublishers.concat(BodyPublisher…)* method that helps us building a request body from the concatenation of the request bodies published by a sequence of publishers. The request body published by a concatenation publisher is logically equivalent to the request body that would have been published by concatenating all the bytes of each publisher in sequence.
 
-#### 2.1.6.1. <ins>StringBodyPublisher</ins>
+#### 2.1.6.1. StringBodyPublisher
 
 Setting a request body with any *BodyPublishers* implementation is very simple and intuitive. For example, if we want to pass a simple String as a body, we can use StringBodyPublishers.
 
@@ -177,7 +186,7 @@ HttpRequest request = HttpRequest.newBuilder()
   .build();
 ```
 
-#### 2.1.6.2. <ins>InputStreamBodyPublisher</ins>
+#### 2.1.6.2. InputStreamBodyPublisher
 
 The *InputStream* has to be passed as a *Supplier* (to make its creation lazy), so it’s a little bit different than StringBodyPublishers.
 
@@ -194,7 +203,7 @@ HttpRequest request = HttpRequest.newBuilder()
 ```
 Notice usage of simple ByteArrayInputStream here. It could be any InputStream implementation.
 
-#### 2.1.6.3. <ins>ByteArrayProcessor</ins>
+#### 2.1.6.3. ByteArrayProcessor
 
 We can also use ByteArrayProcessor and pass an array of bytes as the parameter:
 
@@ -207,7 +216,7 @@ HttpRequest request = HttpRequest.newBuilder()
   .build();
 ```
 
-#### 2.1.6.4. <ins>FileProcessor</ins>
+#### 2.1.6.4. FileProcessor
 
 To work with a File, we can make use of the provided *FileProcessor*. Its factory method takes a *path* to the file as a parameter and creates a *body* from the content:
 
@@ -220,13 +229,13 @@ HttpRequest request = HttpRequest.newBuilder()
   .build();
 ```
 
-## 2.2. <ins>HttpClient</ins>
+## 2.2. HttpClient
 
 All requests are sent using *HttpClient*, which can be instantiated using the *HttpClient.newBuilder()* method or by calling *HttpClient.newHttpClient()*.
 
 It provides a lot of useful and self-describing methods we can use to handle our request/response.
 
-### 2.2.1. <ins>Handling Response Body</ins>
+### 2.2.1. Handling Response Body
 
 Similar to the fluent methods for creating publishers, there are methods dedicated to creating handlers for common body types:
 * *BodyHandlers.ofByteArray*
@@ -251,7 +260,7 @@ From Java 11 we can now simplify it:
 HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 ```
 
-### 2.2.2. <ins>Setting Proxy</ins>
+### 2.2.2. Setting Proxy
 
 We can define a proxy for the connection by just calling proxy() method on a Builder instance:
 
@@ -265,7 +274,7 @@ HttpResponse<String> response = HttpClient
 
 In our example, we used the default system proxy.
 
-### 2.2.3. <ins>Redirect Policy</ins>
+### 2.2.3. Redirect Policy
 
 Sometimes the page we want to access has moved to a different address. In that case, we’ll receive HTTP status code 3xx, usually with the information about new URI. HttpClient can redirect the request to the new URI automatically if we set the appropriate redirect policy.
 
@@ -278,7 +287,7 @@ HttpResponse<String> response = HttpClient.newBuilder()
 
 All policies are defined and described in enum *[HttpClient.Redirect](https://docs.oracle.com/en%2Fjava%2Fjavase%2F11%2Fdocs%2Fapi%2F%2F/java.net.http/java/net/http/HttpClient.Redirect.html)*
 
-### 2.2.4. <ins>Authenticator for a Connection</ins>
+### 2.2.4. Authenticator for a Connection
 
 An *Authenticator* is an object that negotiates credentials (HTTP authentication) for a connection.
 
@@ -305,7 +314,7 @@ Here we passed the *username* and *password* values as a plaintext. **Of course,
 
 Note that not every request should use the same username and password. The *Authenticator* class provides a number of getXXX (e.g., getRequestingSite()) methods that can be used to find out what values should be provided.
 
-### 2.2.5. <ins>Send Requests – Sync vs Async</ins>
+### 2.2.5. Send Requests – Sync vs Async
 
 *HttpClient* provides two possibilities for sending a request to a server:
 * send(…) – synchronously (blocks until the response comes)
@@ -346,7 +355,7 @@ List<CompletableFuture<String>> futures = targets.stream()
   .collect(Collectors.toList());
 ```
 
-### 2.2.6. <ins>Executor for Asynchronous Calls</ins>
+### 2.2.6. Executor for Asynchronous Calls
 
 We can also define an *Executor* that provides threads to be used by asynchronous calls.
 
@@ -368,7 +377,7 @@ CompletableFuture<HttpResponse<String>> response2 = HttpClient.newBuilder()
 
 By default, the *HttpClient* uses executor *java.util.concurrent.Executors.newCachedThreadPool()*.
 
-### 2.2.6. <ins>CookieHandler</ins>
+### 2.2.6. CookieHandler
 
 With new API and builder, it’s straightforward to set a *CookieHandler* ([[Cookie]]) for our connection. We can use builder method *cookieHandler(CookieHandler cookieHandler)* to define client-specific *CookieHandler*.
 
@@ -386,7 +395,7 @@ In case our *CookieManager* allows cookies to be stored, we can access them by c
 ((CookieManager) httpClient.cookieHandler().get()).getCookieStore()
 ```
 
-## 2.3. <ins>HTTP Response</ins>
+## 2.3. HTTP Response
 
 The *HttpResponse* class represents the response from the server. It provides a number of useful methods, but these are the two most important:
 * *statusCode()* returns status code (type int) for a response (*HttpURLConnection* class contains possible values).
@@ -398,7 +407,7 @@ The response object has other useful methods such as:
 * trailers()
 * version()
 
-## 2.3.1. <ins>URI of Response Object</ins>
+## 2.3.1. URI of Response Object
 
 The method *uri()* on the response object returns the *URI* [[URI, URL and URN]] from which we received the response.
 
@@ -411,7 +420,7 @@ assertThat(response.uri()
   .toString(), equalTo("https://stackoverflow.com/"));
 ```
 
-## 2.3.2. <ins>Headers from Response</ins>
+## 2.3.2. Headers from Response
 
 We can obtain headers from the response by calling method *headers()* on a response object:
 
@@ -425,7 +434,7 @@ It returns *HttpHeaders* object, which represents a read-only view of HTTP Heade
 
 It has some useful methods that simplify searching for headers value.
 
-## 2.3.3. <ins>Version of the Response</ins>
+## 2.3.3. Version of the Response
 
 The method *version()* defines which version of HTTP protocol was used to talk with a server.
 
@@ -444,7 +453,7 @@ HttpResponse<String> response = HttpClient.newHttpClient()
 assertThat(response.version(), equalTo(HttpClient.Version.HTTP_1_1));
 ```
 
-# 3. <ins>Handling Push Promises in HTTP/2</ins>
+# 3. Handling Push Promises in HTTP/2
 
 New *HttpClient* supports push promises through *PushPromiseHandler* interface [[Interface]].
 
@@ -488,4 +497,4 @@ httpClient.sendAsync(pageRequest, BodyHandlers.ofString(), pushPromiseHandler())
 ```
 
 # **References:**
-1. https://www.baeldung.com/java-9-http-client
+1. [Baeldung - Java 9 HTTP Client](https://www.baeldung.com/java-9-http-client){ target="_blank" rel="noopener noreferrer" }

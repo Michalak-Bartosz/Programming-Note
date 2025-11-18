@@ -1,8 +1,12 @@
 ---
-title: 1. <ins>Scoped Values 1. Preview</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - Scoped Values
+  - Preview Features
+  - Concurrency
 ---
 
-# 1. <ins>Scoped Values 1. Preview</ins>
+# Scoped Values (Preview)
 
+#TODO

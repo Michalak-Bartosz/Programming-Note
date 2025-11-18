@@ -1,8 +1,11 @@
 ---
-title: 1. <ins>Record Patterns</ins>
 tags:
-  - TODO
+  - Java
+  - Java 21
+  - Record Patterns
+  - Pattern Matching
 ---
 
-# 1. <ins>Record Patterns</ins>
+# Record Patterns
 
+#TODO

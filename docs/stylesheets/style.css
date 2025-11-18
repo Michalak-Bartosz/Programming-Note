@@ -12,6 +12,7 @@
 /* h1/h2 styles */
 
 .md-typeset h1 {
+  font-weight: 400;
   border-bottom: 2px solid;
   padding-bottom: 0.3em;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -22,6 +23,7 @@
 }
 
 .md-typeset h2 {
+  font-weight: 200;
   border-bottom: 1px solid;
   padding-bottom: 0.2em;
   transition: transform 0.3s ease, border-color 0.3s ease;
