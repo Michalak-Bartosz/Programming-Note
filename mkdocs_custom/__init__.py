@@ -6,7 +6,7 @@ import re
 from typing import Union
 
 
-def natural_sort_key(tag: str) -> tuple:
+def natural_sort_key(text: str) -> tuple:
     """
     Natural sort key function for tags with numeric prefixes.
 
@@ -20,17 +20,17 @@ def natural_sort_key(tag: str) -> tuple:
         "Basic Types" -> ('Basic Types',)
 
     Args:
-        tag: The tag name to convert to a sort key
+        text: The text to convert to a sort key
 
     Returns:
         A tuple that can be used for natural sorting
     """
-    def convert(text: str) -> Union[int, str]:
+    def convert(part: str) -> Union[int, str]:
         """Convert text to int if it's a number, otherwise return lowercase string"""
-        return int(text) if text.isdigit() else text.lower()
+        return int(part) if part.isdigit() else part.lower()
 
     # Split the string into alternating digit and non-digit parts
-    parts = re.split(r'(\d+)', tag)
+    parts = re.split(r'(\d+)', text)
 
     # Convert each part and return as tuple
     return tuple(convert(part) for part in parts if part)
@@ -78,8 +78,4 @@ def item_title_natural(item) -> tuple:
         title = getattr(item, 'title', str(item))
 
     return natural_sort_key(title)
-
-
-# For backwards compatibility and direct imports
-natural_sort = natural_sort_key
 

@@ -89,8 +89,8 @@ plugins:
       minify_html: true
   - tags:
       tags_hierarchy: true
-      tags_sort_by: !!python/name:custom_sort.tag_name_natural
-      listings_sort_by: !!python/name:custom_sort.item_title_natural
+      tags_sort_by: !!python/name:mkdocs_custom.tag_name_natural
+      listings_sort_by: !!python/name:mkdocs_custom.item_title_natural
 
 # Additional CSS
 extra_css:
