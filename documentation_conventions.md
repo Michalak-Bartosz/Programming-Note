@@ -249,8 +249,8 @@ public class Example {
 docs/
   assets/
     images/
-      001_dark-logo.png
-      002_light-logo.png
+      dark_logo.png
+      light_logo.png
   java/
     other-subjects/
       images/

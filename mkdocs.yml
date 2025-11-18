@@ -46,7 +46,7 @@ theme:
   icon:
     repo: "fontawesome/brands/github"
 
-  # favicon will be handled dynamically by JavaScript
+  favicon: "assets/images/dark_logo.png"
   logo: "assets/images/dark_logo.png"
 
 # Extensions
@@ -100,6 +100,7 @@ extra_css:
 # Additional JavaScript
 extra_javascript:
   - assets/javascripts/theme-favicon.js
+  - assets/javascripts/tags-directory-enhancer.js
 
 # Extra
 extra:
