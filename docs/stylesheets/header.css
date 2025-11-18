@@ -1,0 +1,78 @@
+/* Header customizations - logo, title behavior and spacing */
+
+/* Logo sizing */
+.md-header__button.md-logo img,
+.md-header__logo img,
+.md-header__button.md-logo svg,
+.md-nav__button.md-logo img {
+  height: 2rem;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Light mode - use light_logo.png */
+[data-md-color-scheme="default"] .md-header__button.md-logo img,
+[data-md-color-scheme="default"] .md-logo img {
+  content: url("../assets/images/light_logo.png");
+}
+
+/* Dark mode - switch to dark_logo.png */
+[data-md-color-scheme="slate"] .md-header__button.md-logo img,
+[data-md-color-scheme="slate"] .md-logo img {
+  content: url("../assets/images/dark_logo.png");
+}
+
+/* Title text spacing and colors */
+.md-header__title {
+  margin-left: 0.4rem !important;
+  margin-right: 0.4rem !important;
+  font-weight: 400;
+}
+
+/* Light mode - white text */
+[data-md-color-scheme="default"] .md-header__title,
+[data-md-color-scheme="default"] .md-header__topic {
+  color: #FFFFFF !important;
+}
+
+/* Dark mode - dark text */
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-header__topic {
+  color: #1E2129 !important;
+}
+
+/* Header title behavior - keep site name visible and add separator */
+
+/* Always show the first topic (site name) */
+.md-header__topic:first-child {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  position: relative !important;
+  pointer-events: auto !important;
+  transition: none !important;
+}
+
+/* Add separator before the second topic (page title) when active */
+.md-header__title--active .md-header__topic:first-child:after {
+  content: " | ";
+  opacity: 0.7;
+  margin: 0 0.3em;
+}
+
+/* Position both topics side by side */
+.md-header__title--active .md-header__topic {
+  position: relative !important;
+  display: inline !important;
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  pointer-events: auto !important;
+}
+
+/* Ensure the ellipsis container allows both topics to show */
+.md-header__ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

@@ -2,9 +2,9 @@
 
 Welcome to my comprehensive collection of programming notes! This is a "second brain" repository containing notes, best practices, and interview questions for various programming languages and technologies.
 
-## � What You'll Find Here
+## What You'll Find Here
 
-### Java
+### :fontawesome-brands-java: Java
 
 Comprehensive notes on Java including:
 
@@ -14,25 +14,25 @@ Comprehensive notes on Java including:
 - **Interview Questions**: Curated questions for Java and Spring Boot interviews
 - **Core Concepts**: JVM, garbage collection, memory model, and more
 
-### Kotlin
+### :simple-kotlin: Kotlin
 
 Modern JVM language basics and advanced concepts.
 
-### Design
+### :material-graph-outline: Design
 
 - **Design Patterns**: Common software design patterns
 - **Design Principles**: SOLID and other fundamental principles
 - **Programming Models**: Declarative, functional, imperative, and more
 
-### React.js
+### :fontawesome-brands-react: React.js
 
 Modern frontend development with React.
 
-### Maven
+### :simple-apachemaven: Maven
 
 Build automation and dependency management.
 
-## 🎯 How to Use
+## How to Use
 
 Navigate through the sections using the navigation bar above. Each section contains:
 
@@ -41,6 +41,6 @@ Navigate through the sections using the navigation bar above. Each section conta
 - Code examples and best practices
 - Interview preparation materials
 
-## 📝 Contributing
+## Contributing
 
 This is a living document that grows over time.

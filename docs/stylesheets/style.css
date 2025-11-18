@@ -1,0 +1,71 @@
+/* extra.css — force theme primary/accent variables to match mkdocs.yml */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #595C60;
+  --md-accent-fg-color: #7E8287;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #6C6F74;
+  --md-accent-fg-color: #333638;
+}
+
+/* h1/h2 styles */
+
+.md-typeset h1 {
+  border-bottom: 2px solid;
+  padding-bottom: 0.3em;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.md-typeset h1:hover {
+  transform: translateX(4px);
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid;
+  padding-bottom: 0.2em;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.md-typeset h2:hover {
+  transform: translateX(3px);
+}
+
+/* Light (default) variants */
+
+[data-md-color-scheme="default"] .md-typeset h1 {
+  color: var(--md-primary-fg-color) !important;
+  border-bottom-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="default"] .md-typeset h1:hover {
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="default"] .md-typeset h2 {
+  color: var(--md-primary-fg-color) !important;
+  border-bottom-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="default"] .md-typeset h2:hover {
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
+/* Dark (slate) variants */
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: var(--md-primary-fg-color) !important;
+  border-bottom-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1:hover {
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: var(--md-primary-fg-color) !important;
+  border-bottom-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2:hover {
+  border-bottom-color: var(--md-accent-fg-color);
+}

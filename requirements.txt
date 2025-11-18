@@ -1,17 +1,19 @@
+# requirements.txt — use latest versions (no version pins)
+
 # MkDocs and plugins
-mkdocs>=1.5.3
-mkdocs-material>=9.4.0
-mkdocs-minify-plugin>=0.7.1
+mkdocs
+mkdocs-material
+mkdocs-minify-plugin
 
 # Additional plugins
-pymdown-extensions>=10.3
-markdown>=3.5
-Pygments>=2.16.1
+pymdown-extensions
+markdown
+Pygments
 
 # Optional but useful
-mkdocs-git-revision-date-localized-plugin>=1.2.1
-mkdocs-awesome-pages-plugin>=2.9.2
+mkdocs-git-revision-date-localized-plugin
+mkdocs-awesome-pages-plugin
 
 # Mermaid diagrams and pan zoom
-mkdocs-mermaid2-plugin>=1.1.1
-mkdocs-panzoom-plugin>=0.4.2
+mkdocs-mermaid2-plugin
+mkdocs-panzoom-plugin
