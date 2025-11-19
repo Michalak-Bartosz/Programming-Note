@@ -1,19 +1,26 @@
-site_name: Programming Notes
+# =============================================================================
+#  Site Identity & Metadata
+# =============================================================================
+site_name: Programming Notes            # Display name in the header and browser title
 site_description: A comprehensive collection of programming notes and best practices
 site_author: Michalak-Bartosz
 site_url: https://michalak-bartosz.github.io/Programming-Note/
 
-# Repository
+# =============================================================================
+#  Repository Integration (edit/view on GitHub straight from the docs)
+# =============================================================================
 repo_name: Programming-Note
 repo_url: https://github.com/Michalak-Bartosz/Programming-Note
 edit_uri: edit/main/docs/
 
-# Theme Configuration
+# =============================================================================
+#  Material Theme (colors, icons, navigation helpers)
+# =============================================================================
 theme:
   name: material
-  language: en
+  language: en                       # Localized strings for built-in UI labels
   palette:
-    # Light mode
+    # Light mode palette (default)
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: "#595C60"
@@ -21,7 +28,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Dark mode
+    # Dark mode palette
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: "#333638"
@@ -31,83 +38,102 @@ theme:
         name: Switch to light mode
 
   features:
-    - navigation.instant # Instant loading
-    - navigation.tracking # Anchor tracking
-    - navigation.tabs # Top-level sections in tabs
-    - navigation.tabs.sticky # Keep tabs visible when scrolling
-    - navigation.indexes # Section index pages
-    - navigation.top # Back to top button
-    - search.suggest # Search suggestions
-    - search.highlight # Highlight search terms
-    - search.share # Share search results
-    - content.code.copy # Copy code blocks
-    - content.code.annotate # Code annotations
+    - navigation.instant             # Prefetch next page for snappier feel
+    - navigation.tracking            # Highlight section currently in view
+    - navigation.tabs                # Top-level sections rendered as tabs
+    - navigation.tabs.sticky         # Tabs remain visible while scrolling
+    - navigation.indexes             # Auto-generated index pages for folders
+    - navigation.top                 # Back-to-top floating button
+    - search.suggest                 # Autocomplete results in search bar
+    - search.highlight               # Highlight query within documents
+    - search.share                   # Copyable search URLs
+    - content.code.copy              # Copy-to-clipboard button on code blocks
+    - content.code.annotate          # Numbered code annotations
+
+  code:
+    highlight_theme: dracula         # Apply Dracula palette to fenced code blocks
+    line_numbers: true               # Show line numbers for plain fenced code
 
   icon:
-    repo: "fontawesome/brands/github"
+    repo: "fontawesome/brands/github"  # GitHub logo for repo button
 
   favicon: "assets/images/dark_logo.png"
   logo: "assets/images/dark_logo.png"
 
-# Extensions
+# =============================================================================
+#  Markdown Extensions (syntax sugar enabled in every page)
+# =============================================================================
 markdown_extensions:
   - toc:
-      permalink: true
-      toc_depth: 3
-  - admonition
-  - footnotes
-  - attr_list
-  - def_list
+      permalink: true               # Add ¶ anchor copy link per heading
+      toc_depth: 3                  # Include headings up to H3
+  - admonition                      # Adds !!! note/warning blocks
+  - footnotes                       # Markdown footnote syntax
+  - attr_list                       # Attribute lists on inline elements
+  - def_list                        # Definition list support
   - pymdownx.superfences:
       custom_fences:
-        - name: mermaid
+        - name: mermaid             # Render ```mermaid``` diagrams
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
+      anchor_linenums: true         # Linkable line numbers
+      line_spans: __span            # Allow inline styling of highlighted lines
+      pygments_lang_class: true     # Add language class to code element
   - pymdownx.tasklist:
-      custom_checkbox: true
+      custom_checkbox: true         # Replaces bullets with GitHub-style checkboxes
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-# Plugins
+# =============================================================================
+#  Plugins (grouped by purpose for readability)
+# =============================================================================
 plugins:
+  # --- Navigation & discovery ---q
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: date
-  - awesome-pages
-  - mermaid2:
-  - panzoom:
-      full_screen: true
-  - minify:
-      minify_html: true
-  - tags:
-      listings: true
-      tags_hierarchy: true
+  - awesome-pages                   # Read structure from .pages files instead of static nav
 
-# Additional CSS
+  # --- Content metadata & taxonomy ---
+  - git-revision-date-localized:
+      enable_creation_date: true    # Display created+updated timestamps in page meta
+      type: date
+  - tags:
+      listings: true                # Generate /tags/ listing pages
+      tags_hierarchy: true          # Nest tag families automatically
+
+  # --- Rich media & interaction ---
+  - mermaid2:                       # Server-side rendering of Mermaid diagrams
+  - panzoom:
+      full_screen: true             # Allow zooming diagrams/fullscreen images
+
+  # --- Performance tweaks ---
+  - minify:
+      minify_html: true             # Shrink generated HTML for faster delivery
+
+# =============================================================================
+#  Assets (custom CSS/JS layered on top of Material theme)
+# =============================================================================
 extra_css:
   - stylesheets/style.css
   - stylesheets/header.css
 
-
-# Additional JavaScript
 extra_javascript:
   - assets/javascripts/theme-favicon.js
   - assets/javascripts/tags-directory-enhancer.js
 
-# Extra
+# =============================================================================
+#  Miscellaneous UI Extras (social links, footer, generator toggle)
+# =============================================================================
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Michalak-Bartosz
-  generator: false
+  generator: false                 # Hide “Made with MkDocs” footer badge
 
-# Copyright footer
-copyright: Copyright © 2025 Michalak-Bartosz | <strong>Programming-Note</strong> | A comprehensive collection of programming notes and best practices.
+copyright: |
+  Copyright © 2025 Michalak-Bartosz
+  <strong>Programming-Note</strong>
+  A comprehensive collection of programming notes and best practices.

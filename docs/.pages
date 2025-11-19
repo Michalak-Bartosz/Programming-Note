@@ -1,7 +1,10 @@
 nav:
-  - About: index.md
-  - Java: java
-  - Kotlin: kotlin
-  - React-js: react-js
-  - Maven: maven
+  - Foundations: foundations
+  - JVM Languages:
+      - Overview: jvm-languages/index.md
+      - Java: jvm-languages/java
+      - Kotlin: jvm-languages/kotlin
+  - Tooling: tooling
+  - Frontend: frontend
+  - Interview: interview
   - Tags: tags.md
