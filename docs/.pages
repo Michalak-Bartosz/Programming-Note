@@ -1,9 +1,6 @@
 nav:
   - Foundations: foundations
-  - JVM Languages:
-      - Overview: jvm-languages/index.md
-      - Java: jvm-languages/java
-      - Kotlin: jvm-languages/kotlin
+  - JVM Languages: jvm-languages
   - Tooling: tooling
   - Frontend: frontend
   - Interview: interview
