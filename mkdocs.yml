@@ -90,7 +90,7 @@ markdown_extensions:
 #  Plugins (grouped by purpose for readability)
 # =============================================================================
 plugins:
-  # --- Navigation & discovery ---q
+  # --- Navigation & discovery ---
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
@@ -103,6 +103,10 @@ plugins:
   - tags:
       listings: true                # Generate /tags/ listing pages
       tags_hierarchy: true          # Nest tag families automatically
+#      tags_allowed:
+#        - java
+#        - jdk-8
+#        - platform
 
   # --- Rich media & interaction ---
   - mermaid2:                       # Server-side rendering of Mermaid diagrams
@@ -117,8 +121,8 @@ plugins:
 #  Assets (custom CSS/JS layered on top of Material theme)
 # =============================================================================
 extra_css:
-  - stylesheets/style.css
-  - stylesheets/header.css
+  - assets/stylesheets/style.css
+  - assets/stylesheets/header.css
 
 extra_javascript:
   - assets/javascripts/theme-favicon.js

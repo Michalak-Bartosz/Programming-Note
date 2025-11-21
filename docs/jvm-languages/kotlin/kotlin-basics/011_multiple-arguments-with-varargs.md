@@ -2,7 +2,6 @@
 tags:
   - kotlin
   - kotlin-basics
-  - language
 ---
 
 

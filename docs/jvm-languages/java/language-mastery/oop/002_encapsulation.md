@@ -3,7 +3,6 @@ title: 1. Encapsulation
 
 tags:
   - java
-  - language
 ---
 
 

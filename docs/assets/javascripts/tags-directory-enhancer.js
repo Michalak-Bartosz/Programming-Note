@@ -5,394 +5,439 @@
 (() => {
   'use strict';
 
-  /**
-   * Extract directory path from a URL
-   * @param {string} url - The URL to parse
-   * @returns {string} - The directory path
-   */
-  const getDirectoryFromUrl = (url) => {
+  const CONFIG = {
+    tagHeadingSelector: 'h2[id^="tag:"]',
+    contentSelector: '.md-content',
+    tagsPathSegment: '/tags/',
+    rootLabel: 'Root',
+    styleElementId: 'tags-directory-enhancer-styles',
+    entryContainerId: 'tag-directory-view'
+  };
+
+  const textCollator = new Intl.Collator(undefined, {
+    numeric: true,
+    sensitivity: 'base'
+  });
+
+  const createElement = (tag, className, textContent) => {
+    const element = document.createElement(tag);
+    if (className) {
+      element.className = className;
+    }
+    if (typeof textContent === 'string') {
+      element.textContent = textContent;
+    }
+    return element;
+  };
+
+  const repoSegment = (() => {
+    const parts = window.location.pathname.split('/').filter(Boolean);
+    return parts.length ? parts[0] : null;
+  })();
+
+  const isTagsPage = () => window.location.pathname.includes(CONFIG.tagsPathSegment);
+
+  const getDirectoryLabel = (href) => {
     try {
-      const urlObj = new URL(url, window.location.origin);
-      const path = urlObj.pathname;
+      const { pathname } = new URL(href, window.location.origin);
+      const segments = pathname.split('/').filter(Boolean);
 
-      // Remove base path and file name, keep directory structure
-      const parts = path.split('/').filter(Boolean);
-
-      // Remove the first part if it's the repo name (for GitHub Pages)
-      if (parts[0] === 'Programming-Note') {
-        parts.shift();
+      if (repoSegment && segments[0] === repoSegment) {
+        segments.shift();
       }
 
-      // Remove the last part (usually index.html or similar)
-      if (parts.length > 0) {
-        parts.pop();
+      if (segments.length) {
+        segments.pop();
       }
 
-      return parts.length > 0 ? parts.join(' / ') : 'Root';
-    } catch (e) {
+      return segments.length ? segments.join(' / ') : CONFIG.rootLabel;
+    } catch (error) {
+      console.warn('[tags-enhancer] Unable to parse URL:', href, error);
       return 'Unknown';
     }
   };
 
-  /**
-   * Natural sort comparison for strings with numbers
-   * @param {string} a - First string
-   * @param {string} b - Second string
-   * @returns {number} - Comparison result
-   */
-  const naturalSort = (() => {
-    const re = /(\d+)|(\D+)/g;
-    const numRe = /^\d+$/;
+  const collectTagEntries = () => {
+    const entryMap = new Map();
 
-    return (a, b) => {
-      const aParts = a.match(re);
-      const bParts = b.match(re);
-
-      if (!aParts || !bParts) {
-        return a.localeCompare(b);
-      }
-
-      const len = Math.min(aParts.length, bParts.length);
-
-      for (let i = 0; i < len; i++) {
-        const aPart = aParts[i];
-        const bPart = bParts[i];
-
-        // If both are numbers, compare numerically
-        if (numRe.test(aPart) && numRe.test(bPart)) {
-          const diff = parseInt(aPart, 10) - parseInt(bPart, 10);
-          if (diff !== 0) return diff;
-        } else {
-          // Otherwise compare as strings
-          const cmp = aPart.localeCompare(bPart);
-          if (cmp !== 0) return cmp;
-        }
-      }
-
-      return aParts.length - bParts.length;
-    };
-  })();
-
-  /**
-   * Group files by directory
-   * @param {Array} listItems - Array of list item elements
-   * @returns {Map} - Map of directory to array of {link, title}
-   */
-  const groupFilesByDirectory = (listItems) => {
-    return listItems.reduce((dirMap, listItem) => {
-      const link = listItem.querySelector('a');
-      if (!link) return dirMap;
-
-      const directory = getDirectoryFromUrl(link.href);
-      const title = link.textContent.trim();
-
-      if (!dirMap.has(directory)) {
-        dirMap.set(directory, []);
-      }
-
-      dirMap.get(directory).push({
-        link: link.cloneNode(true),
-        title
-      });
-
-      return dirMap;
-    }, new Map());
-  };
-
-  /**
-   * Create grouped and sorted HTML
-   * @param {Map} dirMap - Map of directory to files
-   * @returns {string} - HTML string
-   */
-  const createGroupedHTML = (() => {
-    const DIR_ICON = `<svg class="dir-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M10 4H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8z"/>
-    </svg>`;
-
-    return (dirMap) => {
-      // Sort directories alphabetically
-      const sortedDirs = Array.from(dirMap.keys()).sort();
-
-      const dirSections = sortedDirs.map(directory => {
-        const files = dirMap.get(directory);
-
-        // Sort files naturally within directory
-        files.sort((a, b) => naturalSort(a.title, b.title));
-
-        const fileItems = files
-          .map(({ link }) => `<li>${link.outerHTML}</li>`)
-          .join('');
-
-        const dirClass = directory === 'Root' ? 'dir-root' : 'dir-path';
-
-        return `
-          <div class="directory-group">
-            <div class="directory-header ${dirClass}">
-              ${DIR_ICON}
-              <span class="directory-name">${directory}</span>
-              <span class="file-count">(${files.length})</span>
-            </div>
-            <ul class="directory-files">${fileItems}</ul>
-          </div>
-        `;
-      }).join('');
-
-      return `<div class="grouped-files">${dirSections}</div>`;
-    };
-  })();
-
-  /**
-   * Process all tag sections on the page
-   */
-  const enhanceTagsSections = () => {
-    // Find all tag sections (h2 elements with tag in their id)
-    const tagSections = document.querySelectorAll('h2[id^="tag:"]');
-
-    tagSections.forEach(tagHeader => {
-      // Find the ul element after the h2
-      let ulElement = tagHeader.nextElementSibling;
-
-      // Skip non-UL siblings until we find UL or another H2
-      while (ulElement && ulElement.tagName !== 'UL' && ulElement.tagName !== 'H2') {
-        ulElement = ulElement.nextElementSibling;
-      }
-
-      // Validate we found a UL element that hasn't been processed
-      if (!ulElement ||
-          ulElement.tagName !== 'UL' ||
-          ulElement.classList.contains('files-processed') ||
-          ulElement.classList.contains('directory-files')) {
+    document.querySelectorAll(CONFIG.tagHeadingSelector).forEach((heading) => {
+      const tagName = heading.id?.replace('tag:', '') || heading.textContent.trim();
+      const listElement = findNextList(heading);
+      if (!tagName || !listElement) {
         return;
       }
 
-      // Get all list items
-      const listItems = Array.from(ulElement.querySelectorAll('li'));
-      if (listItems.length === 0) return;
-
-      // Group files by directory
-      const dirMap = groupFilesByDirectory(listItems);
-      if (dirMap.size === 0) return;
-
-      // Create new grouped HTML and replace
-      const groupedHTML = createGroupedHTML(dirMap);
-      ulElement.outerHTML = groupedHTML;
+      listElement.querySelectorAll('li a').forEach((anchor) => {
+        if (!anchor.href) {
+          return;
+        }
+        const href = anchor.href;
+        if (!entryMap.has(href)) {
+          entryMap.set(href, {
+            href,
+            title: anchor.textContent.trim(),
+            directory: getDirectoryLabel(href),
+            tags: new Set()
+          });
+        }
+        entryMap.get(href).tags.add(tagName);
+      });
     });
+
+    return Array.from(entryMap.values()).map((entry) => ({
+      ...entry,
+      tags: Array.from(entry.tags).sort((a, b) => textCollator.compare(a, b))
+    }));
   };
 
-  /**
-   * Add CSS styles for grouped directories
-   */
-  const addStyles = () => {
-    const styleId = 'tags-directory-enhancer-styles';
+  const hideOriginalTagSections = () => {
+    document.querySelectorAll(CONFIG.tagHeadingSelector).forEach((heading) => heading.setAttribute('hidden', 'hidden'));
+    document.querySelectorAll(`${CONFIG.tagHeadingSelector} + ul`).forEach((list) => list.setAttribute('hidden', 'hidden'));
+  };
 
-    // Check if styles already exist
-    if (document.getElementById(styleId)) {
+  const buildEntryCard = (entry) => {
+    const link = createElement('a', 'entry-link', entry.title);
+    link.href = entry.href;
+    return link;
+  };
+
+  const groupEntriesByTags = (entries) => {
+    const groups = new Map();
+
+    entries.forEach((entry) => {
+      const key = entry.tags.join('|') || 'untagged';
+      if (!groups.has(key)) {
+        groups.set(key, {
+          tags: entry.tags,
+          entries: []
+        });
+      }
+      groups.get(key).entries.push(entry);
+    });
+
+    return Array.from(groups.values()).sort((a, b) => textCollator.compare(a.tags.join(', '), b.tags.join(', ')));
+  };
+
+  const groupEntriesByDirectory = (entries) => {
+    const directories = new Map();
+    entries.forEach((entry) => {
+      const key = entry.directory || CONFIG.rootLabel;
+      if (!directories.has(key)) {
+        directories.set(key, []);
+      }
+      directories.get(key).push(entry);
+    });
+
+    return Array.from(directories.entries()).sort((a, b) => textCollator.compare(a[0], b[0]));
+  };
+
+  const renderUnifiedEntries = (entries) => {
+    const article = document.querySelector('.md-content__inner');
+    if (!article) {
       return;
     }
 
-    const styles = `
-      /* Container for grouped files */
-      .grouped-files {
+    const existing = document.getElementById(CONFIG.entryContainerId);
+    if (existing) {
+      existing.remove();
+    }
+
+    if (!entries.length) {
+      return;
+    }
+
+    const container = document.createElement('section');
+    container.id = CONFIG.entryContainerId;
+    container.className = 'tag-directory';
+
+    const grouped = groupEntriesByTags(entries);
+
+    grouped.forEach((group) => {
+      const groupSection = document.createElement('section');
+      groupSection.className = 'tag-group';
+
+      const header = document.createElement('header');
+      header.className = 'tag-group-header';
+
+      const title = createElement('div', 'tag-group-title');
+      if (group.tags.length) {
+        const chips = createElement('div', 'tag-chip-wrap');
+        group.tags.forEach((tag) => {
+          chips.appendChild(createElement('span', 'tag-chip', tag));
+        });
+        title.appendChild(chips);
+      } else {
+        title.textContent = CONFIG.rootLabel;
+      }
+      header.appendChild(title);
+
+      const count = document.createElement('span');
+      count.className = 'tag-group-count';
+      count.textContent = `${group.entries.length} file${group.entries.length === 1 ? '' : 's'}`;
+      header.appendChild(count);
+
+      groupSection.appendChild(header);
+
+      const body = document.createElement('div');
+      body.className = 'tag-group-body';
+
+      groupEntriesByDirectory(group.entries).forEach(([directoryName, dirEntries]) => {
+        const directorySection = document.createElement('section');
+        directorySection.className = 'directory-cluster';
+
+        const directoryHeader = document.createElement('header');
+        directoryHeader.className = 'directory-header';
+
+        const directoryLabel = createElement('span', 'directory-name');
+        const directoryIcon = createElement('span', 'directory-icon');
+        directoryIcon.innerHTML = `
+          <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false">
+            <path d="M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-7.17l-2-2ZM20 18H4V6h5.17l2 2H20Z" />
+          </svg>
+        `;
+        const directoryText = createElement('span', 'directory-text', directoryName);
+        directoryLabel.appendChild(directoryIcon);
+        directoryLabel.appendChild(directoryText);
+        directoryHeader.appendChild(directoryLabel);
+
+        const directoryCount = createElement(
+          'span',
+          'directory-count',
+          `${dirEntries.length} item${dirEntries.length === 1 ? '' : 's'}`
+        );
+        directoryHeader.appendChild(directoryCount);
+
+        directorySection.appendChild(directoryHeader);
+
+        const list = createElement('div', 'directory-files');
+
+        dirEntries
+          .sort((a, b) => textCollator.compare(a.title, b.title))
+          .forEach((entry) => list.appendChild(buildEntryCard(entry)));
+
+        directorySection.appendChild(list);
+        body.appendChild(directorySection);
+      });
+
+      groupSection.appendChild(body);
+      container.appendChild(groupSection);
+    });
+
+    article.appendChild(container);
+  };
+
+  const findNextList = (node) => {
+    let cursor = node.nextElementSibling;
+    while (cursor && cursor.tagName !== 'UL' && cursor.tagName !== 'H2') {
+      cursor = cursor.nextElementSibling;
+    }
+    return cursor && cursor.tagName === 'UL' ? cursor : null;
+  };
+
+  const enhanceTagLists = () => {
+    if (!isTagsPage()) {
+      return;
+    }
+
+    const entries = collectTagEntries();
+    renderUnifiedEntries(entries);
+    hideOriginalTagSections();
+  };
+
+  const injectStyles = () => {
+    if (document.getElementById(CONFIG.styleElementId)) {
+      return;
+    }
+
+    const styles = document.createElement('style');
+    styles.id = CONFIG.styleElementId;
+    styles.textContent = `
+      .tag-directory {
         margin: 1em 0;
       }
 
-      /* Directory group */
-      .directory-group {
-        margin-bottom: 1.5em;
-        border-left: 3px solid var(--md-accent-fg-color, #4051b5);
-        padding-left: 0;
+      .tag-group {
+        margin-bottom: 2em;
+        border-left: 4px solid var(--md-accent-fg-color, #4051b5);
+        padding-left: 1em;
       }
 
-      .directory-group:last-child {
+      .tag-group:last-child {
         margin-bottom: 0;
       }
 
-      /* Directory header */
-      .directory-header {
+      .tag-group-header {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 0.5em;
-        padding: 0.5em 0.75em;
-        background-color: var(--md-code-bg-color, #f5f5f5);
+        margin-bottom: 0.75em;
+      }
+
+      .tag-group-title {
         font-weight: 600;
-        font-size: 0.9em;
         color: var(--md-default-fg-color, #000);
-        margin-bottom: 0.5em;
-        border-radius: 0 0.2em 0.2em 0;
       }
 
-      [data-md-color-scheme="slate"] .directory-header {
-        background-color: var(--md-code-bg-color, #2d2d2d);
-        color: var(--md-default-fg-color, #fff);
-      }
-
-      /* Directory icon */
-      .dir-icon {
-        width: 1.1em;
-        height: 1.1em;
-        fill: var(--md-accent-fg-color, #4051b5);
-        flex-shrink: 0;
-      }
-
-      /* Directory name */
-      .directory-name {
-        font-family: var(--md-code-font, monospace);
-        font-size: 0.95em;
-        flex-grow: 1;
-      }
-
-      /* File count badge */
-      .file-count {
+      .tag-group-count {
         font-size: 0.85em;
         color: var(--md-default-fg-color--light, #666);
-        font-weight: 400;
       }
 
-      /* Root directory special styling */
-      .directory-header.dir-root {
-        background-color: var(--md-accent-fg-color--transparent, rgba(64, 81, 181, 0.08));
+      .tag-group-body {
+        display: grid;
+        gap: 1em;
       }
 
-      [data-md-color-scheme="slate"] .directory-header.dir-root {
-        background-color: var(--md-accent-fg-color--transparent, rgba(96, 125, 255, 0.12));
+      .directory-cluster {
+        padding: 0.5em 0.75em;
+        border: 1px solid var(--md-default-fg-color--lighter, #d0d0d0);
+        border-radius: 0.5em;
+        background-color: var(--md-code-bg-color, #f8f8f8);
       }
 
-      /* Files list */
+      .directory-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        color: var(--md-default-fg-color, #333);
+        margin-bottom: 0.35em;
+      }
+
+      .directory-name {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4em;
+      }
+
+      .directory-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .directory-icon svg {
+        width: 1.3em;
+        height: 1.1em;
+        filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+        fill: currentColor;
+      }
+
+      .directory-icon {
+        color: var(--md-accent-fg-color, #4051b5);
+      }
+
+      [data-md-color-scheme="default"] .directory-icon {
+        color: var(--md-accent-fg-color, #7E8287);
+      }
+
+      [data-md-color-scheme="slate"] .directory-icon {
+        color: var(--md-accent-fg-color, #6C6F74);
+      }
+
+      .directory-text {
+        font-family: var(--md-text-font, 'Roboto', sans-serif);
+      }
+
+      .directory-count {
+        font-size: 0.85em;
+        color: var(--md-default-fg-color--light, #666);
+      }
+
       .directory-files {
-        margin: 0;
-        padding-left: 0;
-        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+        border-left: 1px dashed var(--md-default-fg-color--lighter, #cacaca);
+        padding-left: 0.8em;
       }
 
-      .directory-files li {
-        padding: 0.3em 0.75em;
-        margin: 0;
-        transition: background-color 0.15s ease;
-      }
-
-      .directory-files li:hover {
-        background-color: var(--md-accent-fg-color--transparent, rgba(64, 81, 181, 0.05));
-      }
-
-      [data-md-color-scheme="slate"] .directory-files li:hover {
-        background-color: var(--md-accent-fg-color--transparent, rgba(96, 125, 255, 0.08));
-      }
-
-      .directory-files a {
+      .entry-link {
+        position: relative;
+        padding-left: 1em;
+        color: var(--md-typeset-a-color);
         text-decoration: none;
-        color: var(--md-typeset-a-color, #4051b5);
       }
 
-      .directory-files a:hover {
+      .entry-link::before {
+        content: '\\2022';
+        position: absolute;
+        left: 0;
+        color: var(--md-accent-fg-color, #4051b5);
+      }
+
+      .entry-link:hover {
         text-decoration: underline;
       }
 
-      /* Responsive adjustments */
-      @media screen and (max-width: 76.1875em) {
-        .directory-header {
-          font-size: 0.85em;
-        }
+      .tag-chip-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4em;
+      }
 
-        .directory-name {
-          font-size: 0.9em;
+      .tag-chip {
+        padding: 0.2em 0.6em;
+        border-radius: 999px;
+        border: 1px solid var(--md-accent-fg-color, #4051b5);
+        font-size: 0.85em;
+        color: var(--md-default-fg-color);
+        background-color: var(--md-code-bg-color, #f5f5f5);
+      }
+
+      @media screen and (max-width: 76.1875em) {
+        .entry-link {
+          font-size: 0.95em;
         }
       }
     `;
 
-    const styleElement = document.createElement('style');
-    styleElement.id = styleId;
-    styleElement.textContent = styles;
-    document.head.appendChild(styleElement);
+    document.head.appendChild(styles);
   };
 
-  /**
-   * Debounce function to limit execution rate
-   * @param {Function} func - Function to debounce
-   * @param {number} wait - Wait time in milliseconds
-   * @returns {Function} - Debounced function
-   */
-  const debounce = (func, wait) => {
-    let timeout;
-    return function executedFunction(...args) {
-      const later = () => {
-        clearTimeout(timeout);
-        func(...args);
-      };
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-    };
-  };
-
-  /**
-   * Check if current page is tags page
-   * @returns {boolean}
-   */
-  const isTagsPage = () => window.location.pathname.includes('/tags/');
-
-  /**
-   * Process content if tags exist
-   */
-  const processContent = () => {
-    if (!isTagsPage()) return;
-
-    const hasTags = document.querySelector('h2[id^="tag:"]');
-    if (hasTags) {
-      enhanceTagsSections();
+  const observeContentChanges = () => {
+    const contentRoot = document.querySelector(CONFIG.contentSelector);
+    if (!contentRoot) {
+      return null;
     }
-  };
-
-  /**
-   * Setup MutationObserver for instant navigation
-   */
-  const setupObserver = () => {
-    const content = document.querySelector('.md-content');
-    if (!content) return null;
-
-    const debouncedProcess = debounce(() => {
-      if (isTagsPage()) {
-        processContent();
-      }
-    }, 100);
 
     const observer = new MutationObserver((mutations) => {
-      const hasRelevantChanges = mutations.some(
-        mutation => mutation.type === 'childList' && mutation.addedNodes.length > 0
-      );
-
-      if (hasRelevantChanges) {
-        debouncedProcess();
+      const hasNewNodes = mutations.some((mutation) => mutation.addedNodes.length > 0);
+      if (hasNewNodes && isTagsPage()) {
+        enhanceTagLists();
       }
     });
 
-    observer.observe(content, {
-      childList: true,
-      subtree: true
-    });
-
+    observer.observe(contentRoot, { childList: true, subtree: true });
     return observer;
   };
 
-  /**
-   * Initialize the enhancer
-   */
-  const init = () => {
-    // Add styles once
-    addStyles();
+  let contentObserver = null;
 
-    // Process content when DOM is ready
-    const onReady = () => {
-      processContent();
-      setupObserver();
-    };
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', onReady, { once: true });
-    } else {
-      onReady();
+  const disconnectObserver = () => {
+    if (contentObserver) {
+      contentObserver.disconnect();
+      contentObserver = null;
     }
   };
 
-  // Run initialization
-  init();
-})();
+  const init = () => {
+    disconnectObserver();
 
+    if (!isTagsPage()) {
+      return;
+    }
+
+    injectStyles();
+    enhanceTagLists();
+    contentObserver = observeContentChanges();
+  };
+
+  if (window.document$ && typeof window.document$.subscribe === 'function') {
+    window.document$.subscribe(init);
+  } else if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, { once: true });
+  } else {
+    init();
+  }
+})();

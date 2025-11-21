@@ -1,9 +1,6 @@
 ---
-title: 1. Inheritance
-
 tags:
   - java
-  - language
 ---
 
 

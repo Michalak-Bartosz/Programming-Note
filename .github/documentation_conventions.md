@@ -156,12 +156,17 @@ Cover edge cases, gotchas, or alternative approaches. Reference related docs via
 
 ### 7.1. Lists
 - Use `-` for unordered lists and maintain sentence casing.
+- When a bullet introduces a code sample, keep the explanation short (usually ending with a colon) and indent the fenced code block under that bullet so the narrative and snippet stay grouped together.
 - Indent nested list items by two spaces.
 
 ### 7.2. Code Formatting
 - Wrap inline code with backticks (e.g., ``Optional<String>``).
 - Use fenced code blocks with a language hint. Supported hints include `bash`, `json`, `java`, `javascript`, `kotlin`, `python`, `xml`, `yaml`.
+  - Inside list items, indent fenced code blocks by four spaces so they remain children of the descriptive bullet (mirroring the style in `001_date-and-time-api.md`).
 - Keep code samples executable or at least syntactically valid; annotate complex sections with short comments explaining intent.
+- Precede non-trivial snippets with a short sentence or bullet describing the scenario.
+- For multi-part demos, label them clearly (e.g., “**Example 1:** Basic usage”).
+- For complex flows, pair code samples with a Mermaid diagram when it clarifies the interaction.
 
 ### 7.3. Blockquotes & Callouts
 - `> **NOTE:**` for useful context; `> **WARNING:**` for risk/anti-pattern; `> **TIP:**` for shortcuts or recommended practices.

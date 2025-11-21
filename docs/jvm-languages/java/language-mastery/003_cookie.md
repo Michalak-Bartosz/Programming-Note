@@ -1,7 +1,6 @@
 ---
 tags:
   - java
-  - language
   - platform
   - resources
 ---

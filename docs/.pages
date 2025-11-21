@@ -1,3 +1,5 @@
+index: foundations/index.md
+
 nav:
   - Foundations: foundations
   - JVM Languages: jvm-languages

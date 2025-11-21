@@ -2,7 +2,6 @@
 tags:
   - java
   - jdk-11
-  - language
   - platform
 ---
 

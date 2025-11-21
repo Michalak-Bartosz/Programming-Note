@@ -1,9 +1,6 @@
 ---
-title: 1. Polymorphism
-
 tags:
   - java
-  - language
 ---
 
 

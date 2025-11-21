@@ -2,7 +2,6 @@
 tags:
   - best-practices
   - java
-  - language
 ---
 
 

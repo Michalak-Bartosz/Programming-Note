@@ -3,7 +3,6 @@ title: 1. Java
 
 tags:
   - java
-  - language
 ---
 
 

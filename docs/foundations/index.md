@@ -40,3 +40,4 @@
 !!! tip "Planning new sections?"
     Add an `index.md`, update the local `.pages`, and let `mkdocs-awesome-pages-plugin` wire the rest automatically.
 
+
