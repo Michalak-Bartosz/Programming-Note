@@ -332,7 +332,7 @@
       }
 
       [data-md-color-scheme="slate"] .directory-icon {
-        color: var(--md-accent-fg-color, #6C6F74);
+        color: var(--md-accent-fg-color, #000000ff);
       }
 
       .directory-text {

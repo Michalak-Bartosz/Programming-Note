@@ -23,19 +23,13 @@ theme:
     # Light mode palette (default)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: "#595C60"
-      accent: "#7E8287"
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+      primary: "#3D5A80"
+      accent: "#EE6C4D"
     # Dark mode palette
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: "#333638"
-      accent: "#6C6F74"
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+      primary: "#5F7485"
+      accent: "#8FBDD3"
 
   features:
     - navigation.instant             # Prefetch next page for snappier feel
@@ -127,6 +121,7 @@ extra_css:
 extra_javascript:
   - assets/javascripts/theme-favicon.js
   - assets/javascripts/tags-directory-enhancer.js
+  - assets/javascripts/theme-picker.js
 
 # =============================================================================
 #  Miscellaneous UI Extras (social links, footer, generator toggle)

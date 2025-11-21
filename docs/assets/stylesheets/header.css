@@ -11,17 +11,7 @@
   vertical-align: middle;
 }
 
-/* Light mode - use light_logo.png */
-[data-md-color-scheme="default"] .md-header__button.md-logo img,
-[data-md-color-scheme="default"] .md-logo img {
-  content: url("../images/light_logo.png");
-}
-
-/* Dark mode - switch to dark_logo.png */
-[data-md-color-scheme="slate"] .md-header__button.md-logo img,
-[data-md-color-scheme="slate"] .md-logo img {
-  content: url("../images/dark_logo.png");
-}
+/* Logo swap handled via theme-picker.js */
 
 /* Title text spacing and colors */
 .md-header__title {
@@ -34,13 +24,25 @@
 /* Light mode - white text */
 [data-md-color-scheme="default"] .md-header__title,
 [data-md-color-scheme="default"] .md-header__topic {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
-/* Dark mode - dark text */
+/* Slate mode - dark text */
 [data-md-color-scheme="slate"] .md-header__title,
-[data-md-color-scheme="slate"] .md-header__topic {
-  color: #1E2129 !important;
+[data-md_color-scheme="slate"] .md-header__topic {
+  color: #1e2129 !important;
+}
+
+/* Midnight mode - amber text */
+[data-md-color-scheme="midnight"] .md-header__title,
+[data-md_color-scheme="midnight"] .md-header__topic {
+  color: #ffd166 !important;
+}
+
+/* Dracula mode - lavender text */
+[data-md-color-scheme="dracula"] .md-header__title,
+[data-md_color-scheme="dracula"] .md-header__topic {
+  color: #f8f8f2 !important;
 }
 
 /* Header title behavior - keep site name visible and add separator */
