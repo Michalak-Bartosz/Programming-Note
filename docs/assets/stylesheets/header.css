@@ -14,13 +14,13 @@
 /* Light mode - use light_logo.png */
 [data-md-color-scheme="default"] .md-header__button.md-logo img,
 [data-md-color-scheme="default"] .md-logo img {
-  content: url("../assets/images/light_logo.png");
+  content: url("../images/light_logo.png");
 }
 
 /* Dark mode - switch to dark_logo.png */
 [data-md-color-scheme="slate"] .md-header__button.md-logo img,
 [data-md-color-scheme="slate"] .md-logo img {
-  content: url("../assets/images/dark_logo.png");
+  content: url("../images/dark_logo.png");
 }
 
 /* Title text spacing and colors */
