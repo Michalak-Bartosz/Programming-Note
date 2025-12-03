@@ -4,8 +4,6 @@ tags:
   - java
 ---
 
-
-
 # Core Java Questions for Beginners
 
 ### ***Q1. Is Data Passed by Reference or by Value in Java?***

@@ -4,8 +4,6 @@ tags:
   - java
 ---
 
-
-
 # 1. Functional Interfaces - Tips and Best Practices
 
 # 2. Referred Functionalities:
