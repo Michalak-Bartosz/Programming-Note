@@ -1,3 +1,12 @@
+---
+tags:
+  - jvm-languages
+  - java
+  - language-mastery
+  - java-platform-editions
+  - documentation
+---
+
 # 1. JavaFX
 
 **JavaFX** is a platform for creating rich internet applications using a lightweight user-interface API. **JavaFX's** applications use hardware-accelerated graphics and media engines to take advantage of higher-performance clients and a modern look-and-feel as well as high-level APIs for connecting to networked data sources. **JavaFX's** applications may be clients of Java EE ([Jakarta EE](001_jakarta-ee.md)) platform services.

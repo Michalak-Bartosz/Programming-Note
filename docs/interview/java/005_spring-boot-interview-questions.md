@@ -3,11 +3,11 @@ tags:
   - interview
   - java
   - spring-boot
+  - documentation
 ---
+# 1. Spring Boot Interview Questions
 
-
-
-# Spring Boot Interview Questions
+This page collects practical Spring Boot interview questions that are useful during revision and preparation.
 
 ### ***Q1. What Is Spring Boot and What Are Its Main Features?***
 

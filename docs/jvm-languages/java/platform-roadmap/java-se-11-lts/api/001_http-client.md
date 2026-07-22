@@ -3,10 +3,10 @@ tags:
   - java
   - jdk-11
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. HTTP Client
 
 In Java 11 introduced HTTP client API that implements HTTP/2 and Web Socket.

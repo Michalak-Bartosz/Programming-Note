@@ -2,10 +2,9 @@
 tags:
   - best-practices
   - java
+  - jvm-languages
+  - documentation
 ---
-
-
-
 # 1. Lambda Expressions - Tips and Best Practices
 
 # 2. Referred Functionalities:
@@ -182,5 +181,4 @@ Keep this example as a reminder to avoid code that can cause unexpected mutation
 
 # **References:**
 1. [Baeldung - Java 8 Lambda Expressions Tips](https://www.baeldung.com/java-8-lambda-expressions-tips){ target="_blank" rel="noopener noreferrer" }
-
 

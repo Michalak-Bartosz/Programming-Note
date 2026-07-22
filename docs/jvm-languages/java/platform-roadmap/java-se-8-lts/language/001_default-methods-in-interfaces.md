@@ -3,10 +3,10 @@ tags:
   - java
   - jdk-8
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. **Default Methods in Interfaces**
 
 Default methods in Java are methods that are defined in an interface and have a default implementation. They were introduced in Java 8 to allow developers to add new methods to an interface without breaking the existing implementations of the interface ([Interface](../../../language-mastery/007_interface.md)).
@@ -82,4 +82,3 @@ The following example defines a static method that retrieves a ZoneId object cor
 
 # **References:**
 1. [Default Methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html){ target="_blank" rel="noopener noreferrer" }
-

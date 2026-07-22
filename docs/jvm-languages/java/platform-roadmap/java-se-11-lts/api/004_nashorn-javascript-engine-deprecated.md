@@ -1,3 +1,11 @@
+---
+tags:
+  - jvm-languages
+  - java
+  - platform-roadmap
+  - documentation
+---
+
 # 1. Nashorn JavaScript Engine deprecated
 
 Nashorn is a JavaScript engine developed in the Java programming language originally by Oracle and later by the OpenJDK Community. It relies on the support for dynamically typed languages on the Java Platform (JSR 292) (a concept first realized in the experimental Da Vinci Machine and a standard part of Java 7 and later.) Nashorn was included with Java 8 through JDK 14.

@@ -1,11 +1,12 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - comparator-comparable
+  - documentation
 ---
-
-
-
-# Comparator and Comparable
+# 1. Comparator and Comparable
 
 Guide to understanding and using Comparator and Comparable interfaces in Java.
 

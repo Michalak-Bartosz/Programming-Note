@@ -2,11 +2,11 @@
 tags:
   - java
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
-# Java JDK Comparison Summary
+# 1. Java JDK Comparison Summary
 
 ## Table of Contents
 

@@ -2,11 +2,11 @@
 tags:
   - java
   - platform
+  - jvm-languages
+  - language-mastery
+  - documentation
 ---
-
-
-
-# URI, URL and URN
+# 1. URI, URL and URN
 
 * **URI** (Uniform Resource Identifier) is a formal system for uniquely identifying resources and consists of two types: URLs (Uniform Resource Locator) and URNs (Uniform Resource Name).
 

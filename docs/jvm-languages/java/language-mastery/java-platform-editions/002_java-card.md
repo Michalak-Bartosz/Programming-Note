@@ -1,3 +1,12 @@
+---
+tags:
+  - jvm-languages
+  - java
+  - language-mastery
+  - java-platform-editions
+  - documentation
+---
+
 # 1. Java Card
 
 **Java Card** is a software technology that allows Java-based applications (applets) to be run securely on smart cards and more generally on similar secure small memory footprint devices which are called "secure elements" (SE). Today, a secure element is not limited to its smart cards and other removable cryptographic tokens form factors; embedded SEs soldered onto a device board and new security designs embedded into general purpose chips are also widely used. **Java Card** addresses this hardware fragmentation and specificities while retaining code portability brought forward by Java.

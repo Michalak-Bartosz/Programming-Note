@@ -2,10 +2,10 @@
 tags:
   - java
   - security
+  - jvm-languages
+  - language-mastery
+  - documentation
 ---
-
-
-
 # 1. OWASP
 
 OWASP stands for the Open Web Application Security Project. It is a nonprofit foundation that works to improve the security of software. OWASP provides free and open resources, including documentation, tools, and community support, to help organizations and developers create secure applications.

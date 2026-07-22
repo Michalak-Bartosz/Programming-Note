@@ -3,10 +3,10 @@ tags:
   - java
   - jdk-8
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. Effectively Final Variables
 
 It allows us to not write the *final* modifier for variables, fields, and parameters that are effectively treated and used like final ones.
@@ -76,4 +76,3 @@ public static void main(String[] args) {
 1. [Baeldung - Java Effectively Final](https://www.baeldung.com/java-effectively-final){ target="_blank" rel="noopener noreferrer" }
 2. [JavaRush - Effectively Final](https://javarush.com/pl/groups/posts/pl.591.tak-ostateczna){ target="_blank" rel="noopener noreferrer" }
 3. [JavaLeader - Java 8 Final vs Effectively Final](https://javaleader.pl/2019/07/15/java-8-final-vs-effectively-final/){ target="_blank" rel="noopener noreferrer" }
-

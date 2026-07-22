@@ -1,11 +1,11 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - documentation
 ---
-
-
-
-# Core Concepts
+# 1. Core Concepts
 
 Collection of core Java concepts and fundamental topics.
 

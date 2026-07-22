@@ -1,11 +1,12 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - comparisons
+  - documentation
 ---
-
-
-
-# Comparisons
+# 1. Comparisons
 
 Comparison guides between different Java concepts and features.
 

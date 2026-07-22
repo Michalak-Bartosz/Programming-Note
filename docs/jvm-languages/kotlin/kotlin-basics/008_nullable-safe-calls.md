@@ -2,11 +2,10 @@
 tags:
   - kotlin
   - kotlin-basics
+  - jvm-languages
+  - documentation
 ---
-
-
-
-# Nullable Safe Calls
+# 1. Nullable Safe Calls
 
 Kotlin offers a feature called **Safe Calls** (`?.`), which allows you to safely access properties or methods on nullable types. If the variable is `null`, the call will be skipped, and `null` will be returned.
 

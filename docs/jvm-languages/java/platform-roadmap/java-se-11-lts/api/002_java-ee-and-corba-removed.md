@@ -3,10 +3,10 @@ tags:
   - java
   - jdk-11
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. Java EE and CORBA removed
 
 Java EE moved to the Eclipse Foundation with Java 9 under a new name – [[Jakarta EE]] (interestingly, still JEE). With Java 9, the modules and classes that were specific to Java EE were deprecated. With Java 11, these deprecated APIs and modules have been removed from the Java SE platform and the JDK. CORBA's APIs were also deprecated in Java 9 and were eventually removed in Java 11.

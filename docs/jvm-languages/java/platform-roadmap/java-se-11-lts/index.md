@@ -3,11 +3,11 @@ tags:
   - java
   - jdk-11
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
-# Java SE 11 LTS Main Features:
+# 1. Java SE 11 LTS Main Features:
 
 ## _JVM_
 

@@ -2,11 +2,12 @@
 tags:
   - java
   - resources
+  - jvm-languages
+  - language-mastery
+  - java-history
+  - documentation
 ---
-
-
-
-# Java History
+# 1. Java History
 
 Historical overview of Java programming language and its evolution.
 

@@ -1,3 +1,12 @@
+---
+tags:
+  - jvm-languages
+  - java
+  - language-mastery
+  - java-platform-editions
+  - documentation
+---
+
 # 1. Jakarta EE
 
 The **Java EE** platform is built on top of the Java SE platform. The **Java EE** platform provides an API and runtime environment for developing and running large-scale, multi-tiered, scalable, reliable, and secure network applications.

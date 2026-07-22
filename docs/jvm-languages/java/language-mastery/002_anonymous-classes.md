@@ -1,10 +1,10 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - documentation
 ---
-
-
-
 # 1. Anonymous Classes
 **Anonymous classes are inner classes with no name.** Since they have no name, we can’t use them in order to create instances of anonymous classes. As a result, we have to declare and instantiate anonymous classes in a single expression at the point of use.
 

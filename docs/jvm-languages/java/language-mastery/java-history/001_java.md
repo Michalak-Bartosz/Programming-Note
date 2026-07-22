@@ -3,10 +3,11 @@ title: 1. Java
 
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - java-history
+  - documentation
 ---
-
-
-
 # 1. Java
 
 

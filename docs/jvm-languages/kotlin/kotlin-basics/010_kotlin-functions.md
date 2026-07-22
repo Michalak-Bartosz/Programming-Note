@@ -2,11 +2,10 @@
 tags:
   - kotlin
   - kotlin-basics
+  - jvm-languages
+  - documentation
 ---
-
-
-
-# Kotlin Functions
+# 1. Kotlin Functions
 
 ## 1. First Kotlin Function
 

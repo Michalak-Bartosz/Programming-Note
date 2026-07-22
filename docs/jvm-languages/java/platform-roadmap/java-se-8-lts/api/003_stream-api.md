@@ -3,10 +3,10 @@ tags:
   - java
   - jdk-8
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. Stream API
 
 check: https://www.baeldung.com/java-8-streams

@@ -1,10 +1,11 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - comparator-comparable
+  - documentation
 ---
-
-
-
 # 1. Comparator and Comparable
 
 ```mermaid
