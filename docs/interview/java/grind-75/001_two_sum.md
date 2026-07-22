@@ -3,8 +3,8 @@ tags:
   - interview
   - java
   - grind-75
+  - documentation
 ---
-
 # 1. Two Sum
 
 ## 1. Problem Statement

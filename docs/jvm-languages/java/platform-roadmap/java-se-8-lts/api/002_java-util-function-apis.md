@@ -3,10 +3,10 @@ tags:
   - java
   - jdk-8
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. java.util.function APIs
 
 The interfaces in this package are general purpose [Functional Interfaces](../../../language-mastery/005_functional-interfaces.md) used by the JDK, and are available to be used by user code as well. While they do not identify a complete set of function shapes to which [Lambda Expressions](../language/003_lambda-expressions.md) might be adapted, they provide enough to cover common requirements. Other functional interfaces provided for specific purposes, such as *FileFilter*, are defined in the packages where they are used. The interfaces in this package are annotated with *@FunctionalInterface*.
@@ -28,4 +28,3 @@ The functional interfaces in this package follow an extensible naming convention
 2. [Baeldung - Java 8 Lambda Expressions Tips](https://www.baeldung.com/java-8-lambda-expressions-tips){ target="_blank" rel="noopener noreferrer" }
 3. [Oracle - Java Function Package Summary](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/package-summary.html){ target="_blank" rel="noopener noreferrer" }
 4. [Medium - Java util.function API](https://medium.com/@ashaythecoder/part-b-java-util-function-api-of-java-8-5b6533996075){ target="_blank" rel="noopener noreferrer" }
-

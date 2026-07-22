@@ -3,8 +3,10 @@ tags:
   - java
   - jdk-8
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
 # 1. Date and Time API
 
 Java 8 introduced new APIs for _Date_ and _Time_ to address the shortcomings of the older _java.util.Date_ and

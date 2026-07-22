@@ -1,11 +1,13 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - documentation
 ---
-
-
-
 # 1. Annotations
+
+This page explains how Java annotations work, where they can be applied, and why they are useful in real-world codebases.
 
 _Annotations_, a form of metadata, provide data about a program that is not part of the program itself. _Annotations_ have no direct effect on the operation of the code they annotate.
 
@@ -84,5 +86,4 @@ This form of _annotation_ is called a type _annotation_.
 2. [Oracle - Annotations Basics](https://docs.oracle.com/javase/tutorial/java/annotations/basics.html){ target="_blank" rel="noopener noreferrer" }
 
 [Repeating Annotations](../platform-roadmap/java-se-8-lts/language/004_repeating-annotations.md)
-
 

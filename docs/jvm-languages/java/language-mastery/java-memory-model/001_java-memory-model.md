@@ -1,3 +1,12 @@
+---
+tags:
+  - jvm-languages
+  - java
+  - language-mastery
+  - java-memory-model
+  - documentation
+---
+
 # 1. Java Memory Model
 
 Specifies how the *Java Virtual Machine* **(JVM)** works with the computer's memory (RAM). The Java virtual machine is a model of a whole computer so this model naturally includes a memory model - AKA the *Java memory model*.

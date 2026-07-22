@@ -1,3 +1,12 @@
+---
+tags:
+  - jvm-languages
+  - java
+  - language-mastery
+  - java-history
+  - documentation
+---
+
 # 1. Sun Microsystems
 
 Sun Microsystems, Inc. (Sun for short) was an American technology company that sold computers, computer components, software, and information technology services and created the Java programming language, the Solaris operating system, ZFS, the Network File System (NFS), and SPARC microprocessors. Sun contributed significantly to the evolution of several key computing technologies, among them Unix, RISC processors, thin client computing, and virtualized computing. Notable Sun acquisitions include Cray Business Systems Division, Storagetek, and Innotek GmbH, creators of VirtualBox. Sun was founded on February 24, 1982. At its height, the Sun headquarters were in Santa Clara, California (part of Silicon Valley), on the former west campus of the Agnews Developmental Center.

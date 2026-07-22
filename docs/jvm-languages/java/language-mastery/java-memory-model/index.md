@@ -3,11 +3,12 @@ tags:
   - java
   - performance
   - platform
+  - jvm-languages
+  - language-mastery
+  - java-memory-model
+  - documentation
 ---
-
-
-
-# Java Memory Model
+# 1. Java Memory Model
 
 Understanding Java Memory Model structure and management.
 

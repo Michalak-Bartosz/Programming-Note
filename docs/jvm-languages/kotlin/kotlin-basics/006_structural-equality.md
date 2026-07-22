@@ -2,11 +2,10 @@
 tags:
   - kotlin
   - kotlin-basics
+  - jvm-languages
+  - documentation
 ---
-
-
-
-# Structural Equality
+# 1. Structural Equality
 
 Kotlin provides two types of equality comparison:
 

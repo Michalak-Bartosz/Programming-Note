@@ -1,11 +1,12 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - oop
+  - documentation
 ---
-
-
-
-# Object-Oriented Programming (OOP)
+# 1. Object-Oriented Programming (OOP)
 
 Core object-oriented programming concepts and principles in Java.
 

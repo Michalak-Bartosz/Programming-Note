@@ -3,10 +3,10 @@ tags:
   - best-practices
   - java
   - platform
+  - jvm-languages
+  - language-mastery
+  - documentation
 ---
-
-
-
 # 1. Java Development Process
 
 ## 1.1. _JCP_ - Java Community Process

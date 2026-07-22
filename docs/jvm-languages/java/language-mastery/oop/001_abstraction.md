@@ -1,10 +1,11 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - oop
+  - documentation
 ---
-
-
-
 # 1. Abstraction in Java
 
 ## 1.1. Abstract Methods and Classes
@@ -33,5 +34,4 @@ public abstract class GraphicObject {
 
 # **References:**
 1. [Abstract Methods and Classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html){ target="_blank" rel="noopener noreferrer" }
-
 

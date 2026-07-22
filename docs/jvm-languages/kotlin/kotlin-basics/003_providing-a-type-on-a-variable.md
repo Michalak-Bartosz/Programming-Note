@@ -2,13 +2,12 @@
 tags:
   - kotlin
   - kotlin-basics
+  - jvm-languages
+  - documentation
 ---
+# 1. Providing a Type on a Variable
 
-
-
-# Providing a Type on a Variable
-
-While Kotlin can infer the type of a variable, you can explicitly specify the type if needed.
+Kotlin can often infer the type automatically, but you can still declare it explicitly when clarity or a specific contract matters.
 
 ```kotlin
 val name: String = "John"  // Explicitly specifying type

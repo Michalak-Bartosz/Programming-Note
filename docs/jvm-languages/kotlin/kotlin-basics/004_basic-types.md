@@ -2,10 +2,9 @@
 tags:
   - kotlin
   - kotlin-basics
+  - jvm-languages
+  - documentation
 ---
-
-
-
 # 1. Numbers
 
 Kotlin supports a variety of numeric types.

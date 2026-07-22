@@ -3,8 +3,8 @@ tags:
   - interview
   - java
   - grind-75
+  - documentation
 ---
-
 # 2. Valid Parentheses
 
 ## 1. Problem Statement

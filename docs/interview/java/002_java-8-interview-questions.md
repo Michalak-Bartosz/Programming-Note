@@ -3,11 +3,11 @@ tags:
   - interview
   - java
   - jdk-8
+  - documentation
 ---
+# 1. Java 8 Interview Questions
 
-
-
-# Java 8 Interview Questions
+This page gathers common Java 8 interview questions with concise explanations and short examples.
 
 ### ***Q1. What New Features Were Added in Java 8?***
 

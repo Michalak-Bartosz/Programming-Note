@@ -1,11 +1,11 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - documentation
 ---
-
-
-
-# Interface in Java
+# 1. Interface in Java
 
 In Java, an _interface_ is an **abstract type** that contains a collection of methods and constant variables. It is one of the core concepts in Java and is used to **achieve [Abstraction](oop/001_abstraction.md), [Polymorphism](oop/005_polymorphism.md) and [Inheritance](oop/003_inheritance.md)**.
 * **Example:**
@@ -197,5 +197,4 @@ More: [Abstract Classes Compared to Interfaces](comparisons/001_abstract-classes
 # **References:**
 1. [Oracle - What Is an Interface?](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html){ target="_blank" rel="noopener noreferrer" }
 2. [Baeldung - Interfaces in Java](https://www.baeldung.com/java-interfaces){ target="_blank" rel="noopener noreferrer" }
-
 

@@ -3,10 +3,11 @@ tags:
   - java
   - performance
   - platform
+  - jvm-languages
+  - language-mastery
+  - garbage-collector
+  - documentation
 ---
-
-
-
-# Garbage Collector
+# 1. Garbage Collector
 
 // ...existing code...

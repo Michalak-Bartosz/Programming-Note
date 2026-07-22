@@ -1,17 +1,17 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - documentation
 ---
-
-
-
 # 1. Functional Interfaces
 
-**Any interface with a SAM (Single Abstract Method) is a functional interface**, and its implementation may be treated as lambda expressions.
+A functional interface is an interface with a single abstract method, often called a SAM. Such interfaces can be implemented by lambda expressions or method references, which makes them especially useful in functional-style Java code.
 
-Note that Java 8's _default_ methods are not _abstract_ ([Abstraction](oop/001_abstraction.md)) and do not count - a functional interface may still have multiple _default_ methods ([Default Methods in Interfaces](../platform-roadmap/java-se-8-lts/language/001_default-methods-in-interfaces.md)).
+Java 8's default methods do not count as abstract methods, so an interface can still be functional even if it contains several default methods. See [Default Methods in Interfaces](../platform-roadmap/java-se-8-lts/language/001_default-methods-in-interfaces.md) for more context.
 
-_Functional interfaces_ provide target types for [Lambda Expressions](../platform-roadmap/java-se-8-lts/language/003_lambda-expressions.md) and method references. Each functional interface has a single abstract method, called the _functional method_ for that functional interface, to which the lambda expression's parameter and return types are matched or adapted. Functional interfaces can provide a target type in multiple contexts, such as assignment context, method invocation, or cast context:
+Functional interfaces provide the target type for [Lambda Expressions](../platform-roadmap/java-se-8-lts/language/003_lambda-expressions.md) and method references. They can be used in different contexts, such as assignment, method invocation, or casting:
 
 ```java
      // Assignment context
@@ -30,5 +30,4 @@ Functional interfaces often represent abstract concepts like functions, actions,
 # **References:**
 1. [Oracle - Java Function Package](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/package-summary.html){ target="_blank" rel="noopener noreferrer" }
 2. [Baeldung - Functional Interfaces in Java 8](https://www.baeldung.com/java-8-functional-interfaces){ target="_blank" rel="noopener noreferrer" }
-
 

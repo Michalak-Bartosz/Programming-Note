@@ -3,10 +3,10 @@ tags:
   - java
   - jdk-11
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. Local Variable Syntax for Lambda Parameters
 
 One of the key features introduced in Java 10 was local variable type inference. It allowed the use of _var_ as the type of the local variable instead of the actual type. The compiler inferred the type based on the value assigned to the variable. However, we could not use this feature with lambda parameters.

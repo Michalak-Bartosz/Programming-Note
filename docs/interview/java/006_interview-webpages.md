@@ -3,11 +3,9 @@ tags:
   - interview
   - java
   - resources
+  - documentation
 ---
-
-
-
-# Interview Resources and Webpages
+# 1. Interview Resources and Webpages
 
 ### 1. System Design Interview Guide:
 1. [System Design Interview Guide: FAANG and Startups](https://www.tryexponent.com/blog/system-design-interview-guide){ target="_blank" rel="noopener noreferrer" }

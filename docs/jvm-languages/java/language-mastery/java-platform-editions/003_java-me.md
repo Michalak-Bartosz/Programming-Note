@@ -1,3 +1,12 @@
+---
+tags:
+  - jvm-languages
+  - java
+  - language-mastery
+  - java-platform-editions
+  - documentation
+---
+
 # 1. Java ME
 
 The **Java ME** platform provides an API and a small-footprint virtual machine for running Java programming language applications on small devices, like mobile phones. The API is a subset of the Java SE API, along with special class libraries useful for small device application development. **Java ME** applications are often clients of Java EE platform services.

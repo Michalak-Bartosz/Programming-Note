@@ -2,11 +2,12 @@
 tags:
   - java
   - platform
+  - jvm-languages
+  - language-mastery
+  - java-platform-editions
+  - documentation
 ---
-
-
-
-# Java Platform Editions
+# 1. Java Platform Editions
 
 Overview of different Java platform editions and their use cases.
 

@@ -3,11 +3,11 @@ tags:
   - interview
   - java
   - jdk-17
+  - documentation
 ---
+# 1. Java 17 Interview Questions
 
-
-
-# Java 17 Interview Questions
+This page highlights important Java 17 features that often appear in interview discussions and revision notes.
 
 ### ***Q1. What are the key features introduced in Java 17?***
 

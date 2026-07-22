@@ -3,10 +3,10 @@ tags:
   - java
   - jdk-8
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. Repeating Annotations
 There are some situations where you want to apply the same annotation ([Annotations](../../../language-mastery/001_annotations.md)) to a declaration or type use. 
 
@@ -60,4 +60,3 @@ When designing an annotation type, you must consider the cardinality of annotati
 
 # **References:**
 1. [Oracle - Java Annotations Repeating](https://docs.oracle.com/javase/tutorial/java/annotations/repeating.html){ target="_blank" rel="noopener noreferrer" }
-
