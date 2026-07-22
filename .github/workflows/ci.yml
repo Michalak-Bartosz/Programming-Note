@@ -40,7 +40,13 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build MkDocs site
-        run: mkdocs build
+        run: mkdocs build --strict --clean
+
+      - name: Validate generated links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress './site/**/*.html'
+          fail: true
 
       - name: Upload artifact
         if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/mkdocs'
