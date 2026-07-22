@@ -2,8 +2,9 @@
 tags:
   - best-practices
   - java
+  - jvm-languages
+  - documentation
 ---
-
 # 1. Functional Interfaces - Tips and Best Practices
 
 # 2. Referred Functionalities:
@@ -174,5 +175,4 @@ String result = processor.process((Supplier<String>) () -> "abc");
 
 # **References:**
 1. [Baeldung - Java 8 Lambda Expressions Tips](https://www.baeldung.com/java-8-lambda-expressions-tips){ target="_blank" rel="noopener noreferrer" }
-
 

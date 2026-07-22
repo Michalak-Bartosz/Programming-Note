@@ -3,11 +3,12 @@ tags:
   - java
   - performance
   - platform
+  - jvm-languages
+  - language-mastery
+  - garbage-collector
+  - documentation
 ---
-
-
-
-# JVM Garbage Collectors
+# 1. JVM Garbage Collectors
 
 ```mermaid
 ---

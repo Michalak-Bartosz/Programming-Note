@@ -4,10 +4,10 @@ tags:
   - jdk-8
   - performance
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. Remove Permanent Generation and replace by _Metaspace_
 
 ## 1.1. Permanent Generation (_PermGen_)
@@ -46,4 +46,3 @@ Despite all of these improvements, we still need to monitor and tune the metaspa
 
 # **References:**
 1. [Baeldung - Java PermGen vs Metaspace](https://www.baeldung.com/java-permgen-metaspace){ target="_blank" rel="noopener noreferrer" }
-

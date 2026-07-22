@@ -1,11 +1,11 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - documentation
 ---
-
-
-
-# Java Modifiers
+# 1. Java Modifiers
 
 ## 1.1. Modifiers
 * Modifiers in Java are used for setting the access level to classes, variables, methods, and constructors.

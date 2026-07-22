@@ -3,10 +3,10 @@ tags:
   - java
   - jdk-11
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. Unicode 10 Support
 
 Support has been added for Unicode 10.0.0. Java Platform, Standard Edition (Java SE) 9 and 10 supported Unicode 8.0.

@@ -2,10 +2,11 @@
 tags:
   - best-practices
   - java
+  - jvm-languages
+  - language-mastery
+  - modifiers-descriptions
+  - documentation
 ---
-
-
-
 # 1. Modifier: final
 
 ## 1.1 Local variable
@@ -116,5 +117,4 @@ Thus, we should **use _final_ for communicating design choices to other develope
 
 # **References:**
 1. [Baeldung - Java Final Performance](https://www.baeldung.com/java-final-performance){ target="_blank" rel="noopener noreferrer" }
-
 

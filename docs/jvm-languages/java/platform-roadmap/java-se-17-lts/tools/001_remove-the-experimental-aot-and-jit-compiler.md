@@ -4,10 +4,10 @@ tags:
   - jdk-17
   - performance
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
+# 1. Remove the Experimental AOT and JIT Compiler
 
-
-
-# Remove the Experimental AOT and JIT Compiler
-
-#TODO
+This change removes older experimental compiler components that were superseded by more mature tooling, helping to simplify the platform and reduce maintenance overhead.

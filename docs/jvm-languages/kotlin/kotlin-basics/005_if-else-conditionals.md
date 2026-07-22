@@ -2,11 +2,10 @@
 tags:
   - kotlin
   - kotlin-basics
+  - jvm-languages
+  - documentation
 ---
-
-
-
-# If/Else Conditionals
+# 1. If/Else Conditionals
 
 Kotlin supports traditional `if/else` conditionals.
 

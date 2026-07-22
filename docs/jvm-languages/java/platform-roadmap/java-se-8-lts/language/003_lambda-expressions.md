@@ -3,10 +3,10 @@ tags:
   - java
   - jdk-8
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. Lambda Expressions
 A new language feature, has been introduced in this release. They enable you to treat functionality as a method
 argument, or code as data. Lambda expressions let you express instances of single-method interfaces (referred to as

@@ -3,10 +3,10 @@ tags:
   - java
   - jdk-8
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
-
-
-
 # 1. Type Use Annotations
 
 **Before the Java SE 8** release, annotations could **only be applied to declarations**. As of the Java SE 8 release, annotations can also be applied to any type use. This means that annotations can be used anywhere you use a type.
@@ -34,4 +34,3 @@ In many cases, you do not have to write your own type checking modules. **There 
 
 # **References:**
 1. [Oracle - type annotations](https://docs.oracle.com/javase/tutorial/java/annotations/type_annotations.html){ target="_blank" rel="noopener noreferrer" }
-

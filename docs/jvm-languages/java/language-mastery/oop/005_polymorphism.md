@@ -1,10 +1,11 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - oop
+  - documentation
 ---
-
-
-
 # 1. Polymorphism
 
 

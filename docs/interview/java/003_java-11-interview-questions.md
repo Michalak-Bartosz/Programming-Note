@@ -3,11 +3,11 @@ tags:
   - interview
   - java
   - jdk-11
+  - documentation
 ---
+# 1. Java 11 Interview Questions
 
-
-
-# Java 11 Interview Questions
+This page collects common interview questions about Java 11 and its notable language and runtime improvements.
 
 ### ***Q1: What are the methods added in String API in Java 11?***
 

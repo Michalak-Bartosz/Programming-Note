@@ -1,10 +1,11 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - comparisons
+  - documentation
 ---
-
-
-
 # 1. Abstract Classes Compared to Interfaces
 
 Abstract classes are similar to interfaces ([Interface](../007_interface.md)). You cannot instantiate them, and they may contain a mix of methods declared with or without an implementation. However, with abstract classes, you can declare fields that are not static and final, and define public, protected, and private concrete methods. With interfaces, all fields are automatically public, static, and final, and all methods that you declare or define (as default methods) are public. In addition, you can extend only one class, whether it is abstract, whereas you can implement any number of interfaces.

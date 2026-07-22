@@ -2,9 +2,11 @@
 tags:
   - interview
   - java
+  - documentation
 ---
+# 1. Core Java Questions for Beginners
 
-# Core Java Questions for Beginners
+This page gathers beginner-friendly Java interview questions with concise explanations and short code examples.
 
 ### ***Q1. Is Data Passed by Reference or by Value in Java?***
 

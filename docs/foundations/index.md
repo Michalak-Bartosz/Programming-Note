@@ -1,10 +1,16 @@
-# 1. Programming Notes
+---
+tags:
+  - foundations
+  - documentation
+---
+# 1. Foundations
+
+This section gathers the foundational notes, repository conventions, and starting points for the broader knowledge base.
 
 !!! abstract "Curated knowledge base"
     Your curated project notebook—from programming fundamentals to release roadmaps and interview warm-ups.
 
 !!! tip "Quick start hub"
-    - ✅ **First time here?** Visit [Foundations](index.md) to learn the structure and conventions.
     - 🚀 **Need quick shortcuts?** Use the navigation cards below to drop into the right hub.
     - 🏷️ **Hunting for a specific topic?** Browse [Tags](../tags.md) and filter by the curated labels.
 
@@ -39,5 +45,4 @@
 
 !!! tip "Planning new sections?"
     Add an `index.md`, update the local `.pages`, and let `mkdocs-awesome-pages-plugin` wire the rest automatically.
-
 

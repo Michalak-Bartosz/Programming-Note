@@ -6,11 +6,11 @@ tags:
   - react
   - resources
   - tooling
+  - documentation
 ---
+# 1. Libraries and Resources
 
-
-
-# Libraries and Resources
+This page gathers practical React libraries, components, and references for common UI patterns and frontend experiments.
 
 A curated collection of useful React libraries, tools, and resources for building modern web applications.
 

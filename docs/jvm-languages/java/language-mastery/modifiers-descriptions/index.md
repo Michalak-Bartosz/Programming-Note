@@ -1,11 +1,12 @@
 ---
 tags:
   - java
+  - jvm-languages
+  - language-mastery
+  - modifiers-descriptions
+  - documentation
 ---
-
-
-
-# Modifiers Descriptions
+# 1. Modifiers Descriptions
 
 Detailed guides on Java modifiers and their usage.
 

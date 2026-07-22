@@ -1,5 +1,11 @@
-# Tags
+---
+tags:
+  - foundations
+  - documentation
+---
 
-Following is a list of avaliable tags used throughout the materials:
+# 1. Tags
+
+This page lists the tags used across the materials so content can be browsed and filtered more easily.
 
 <!-- material/tags { toc: false } -->

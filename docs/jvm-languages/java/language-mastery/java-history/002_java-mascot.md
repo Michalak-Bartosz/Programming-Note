@@ -1,3 +1,12 @@
+---
+tags:
+  - jvm-languages
+  - java
+  - language-mastery
+  - java-history
+  - documentation
+---
+
 # 1. Java mascot
 
 Official Java mascot is:

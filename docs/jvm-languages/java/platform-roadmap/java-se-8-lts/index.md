@@ -3,11 +3,13 @@ tags:
   - java
   - jdk-8
   - platform
+  - jvm-languages
+  - platform-roadmap
+  - documentation
 ---
+# 1. Java SE 8 LTS Main Features
 
-
-
-# Java SE 8 LTS Main Features:
+This page summarizes the most important Java SE 8 features and links to deeper notes for each topic.
 
 ## _JVM_
 

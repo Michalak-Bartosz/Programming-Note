@@ -101,7 +101,7 @@ Accompany each diagram with supporting text that explains what the colored nodes
 
 ## 5. Document Skeleton
 
-Start from this template and adapt section titles as needed:
+Start from this template and adapt section titles as needed. A reusable starter file is available at [docs/templates/page-template.md](../docs/templates/page-template.md).
 
 ````markdown
 ---
@@ -126,7 +126,7 @@ Explain the idea plainly. Add bullet lists for feature breakdowns and use blockq
 
 Cover edge cases, gotchas, or alternative approaches. Reference related docs via relative links.
 
-# 2. More about:
+## Related topics
 1. [Related Topic](../path/to/001_related-topic.md)
 2. [Another Page](../path/to/002_another-page.md)
 

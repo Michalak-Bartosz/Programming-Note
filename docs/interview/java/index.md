@@ -2,11 +2,13 @@
 tags:
   - interview
   - java
+  - documentation
 ---
+# 1. Java Interview Materials
 
-# Tags:
- 
-# Content:
+This section collects interview preparation notes for Java and related topics, including classic questions, framework-specific material, and practice sets.
+
+## 1.1. Available resources
 
 1. [Interview Web Pages](006_interview-webpages.md)
 2. [Java 8 Interview Questions](002_java-8-interview-questions.md)
